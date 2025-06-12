@@ -1,0 +1,206 @@
+@use "./variables" as *;
+
+.header-story-section {
+  display: flex;
+  min-height: 500px;
+  width: 100%;
+  background-color: $color-greyish;
+  margin-bottom: 60px;
+
+  .image-container,
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .image-container {
+    padding: 0;
+    width: 60%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: 500px;
+    }
+  }
+
+  .text-container {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px;
+
+    .text-headig-wrapper {
+      font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    .divider {
+      width: 80px;
+      height: 4px;
+      background-color: $color-brand-yellow;
+      margin: 20px 0 30px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: $font-color;
+      max-width: 550px;
+    }
+  }
+  @media (max-width: 840px) {
+    flex-direction: column;
+    .image-container,
+    .text-container {
+      width: 100%;
+    }
+  }
+}
+
+.support-service-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  background-color: $color-greyish;
+  padding: 40px;
+
+  .form-wrapper-section {
+    background-color: $color-brand-blue;
+    padding: 60px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    width: 100%;
+
+    .form-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      label {
+        color: $color-brand-yellow;
+      }
+
+      input {
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        border: none;
+        height: 45px;
+        background: $color-whitish;
+        width: 100%;
+      }
+
+      textarea {
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        border: none;
+        background: $color-whitish;
+        width: 100%;
+      }
+    }
+  }
+
+  .help-line-info-section {
+    border: 1px solid $color-brand-blue;
+    padding: 60px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    width: 100%;
+
+    .info-card-wrapper {
+      border: 2px solid $color-brand-yellow;
+      padding: 40px;
+      border-radius: 10px;
+
+      .info-heading-text {
+        font-size: 25px;
+        color: $color-brand-blue;
+        font-weight: 500;
+      }
+      .contact-info-text {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        column-gap: 15px;
+
+        .blue {
+          font-weight: 500;
+        }
+
+        img {
+          width: 28px;
+          height: 28px;
+          object-fit: contain;
+        }
+      }
+      p {
+        font-weight: 400;
+      }
+    }
+
+    .location-info-cards {
+      margin-top: 20px;
+      .location-heading-text {
+        background-color: $color-brand-blue;
+        color: $color-brand-yellow;
+        font-size: 25px;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+
+      .location-items {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px 0px 20px;
+        padding-left: 0px !important;
+      }
+    }
+  }
+
+  @media (max-width: 962px) {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    .form-wrapper-section,
+    .help-line-info-section {
+      padding: 40px 10px;
+    }
+    .help-line-info-section {
+      .info-card-wrapper {
+        padding: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 469px) {
+    .help-line-info-section {
+      .info-card-wrapper {
+        .info-heading-text {
+          font-size: 20px;
+        }
+        .contact-info-text {
+          gap: 5px;
+          font-size: 13px;
+        }
+      }
+      .location-info-cards {
+        .location-heading-text {
+          font-size: 20px;
+        }
+        .location-items {
+            flex-direction: column;
+        }
+      }
+    }
+  }
+}
