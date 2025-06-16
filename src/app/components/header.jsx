@@ -127,7 +127,7 @@ const menuItemsData = [
     type: "standard-dropdown",
     menuData: [
       { id: "our-story", label: "Our Story", link: "/about" },
-      { id: "careers", label: "/careers", link: "/careers" },
+      { id: "careers", label: "careers", link: "/about" },
     ],
   },
   { id: "support", label: "Support", link: "/support", children: [] },
@@ -510,7 +510,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      const navbar = document.querySelector(".nav-menu"); // Targeting the whole nav-menu for outside click
+      const navbar = document.querySelector(".nav-menu"); 
       if (
         navbar &&
         !navbar.contains(event.target) &&
@@ -533,11 +533,8 @@ export default function Header() {
   }, [activeDesktopDropdownId, isMobileView]);
 
   useEffect(() => {
-    // In Next.js, useRouter().push handles scrolling to top by default on navigation
-    // However, if you have specific scroll restoration needs, you might add logic here.
-    // For typical navigation, this specific scroll to top is often not needed.
-    // window.scrollTo(0, 0);
-  }, [currentPath]); // This might not be strictly necessary with Next.js Link
+    window.scrollTo(0, 0);
+  }, [currentPath]); 
 
   return (
     <Fragment>
