@@ -1,6 +1,11 @@
-import "../styles/header.scss";
+
+"use client"; 
 import React, { Fragment, useState, useEffect, useCallback, memo } from "react";
-import { useLocation, Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image"; 
+import { usePathname } from "next/navigation";
+
+
 
 const productsMenuData = [
   {
@@ -105,44 +110,6 @@ const productsMenuData = [
   },
 ];
 
-// const renewMenuData = [
-//   {
-//     id: "motor-policy",
-//     label: "Motor Policy",
-//     link: "/renew/motor",
-//     children: [
-//       {
-//         id: "renew-car",
-//         label: "Renew Car Insurance",
-//         link: "/renew/motor/car",
-//       },
-//       {
-//         id: "renew-bike",
-//         label: "Renew Bike Insurance",
-//         link: "/renew/motor/bike",
-//       },
-//     ],
-//   },
-//   {
-//     id: "health-policy",
-//     label: "Health Policy",
-//     link: "/renew/health",
-//     children: [],
-//   },
-//   {
-//     id: "travel-policy",
-//     label: "Travel Policy",
-//     link: "/renew/travel",
-//     children: [],
-//   },
-//   {
-//     id: "fire-policy",
-//     label: "Fire Policy",
-//     link: "/renew/fire",
-//     children: [],
-//   },
-// ];
-
 const menuItemsData = [
   {
     id: "products",
@@ -151,13 +118,6 @@ const menuItemsData = [
     type: "mega-menu",
     menuData: productsMenuData,
   },
-  // {
-  //   id: "renew",
-  //   label: "Renew",
-  //   hasDropdown: true,
-  //   type: "mega-menu",
-  //   menuData: renewMenuData,
-  // },
   { id: "renew", label: "Renew", link: "/renew", children: [] },
   { id: "claims", label: "Claims", link: "/claims", children: [] },
   {
@@ -167,7 +127,7 @@ const menuItemsData = [
     type: "standard-dropdown",
     menuData: [
       { id: "our-story", label: "Our Story", link: "/about" },
-      { id: "careers", label: "Careers", link: "/careers" },
+      { id: "careers", label: "/careers", link: "/careers" },
     ],
   },
   { id: "support", label: "Support", link: "/support", children: [] },
@@ -210,10 +170,12 @@ const CloseIcon = memo(() => (
 ));
 
 const DropdownArrowIcon = memo(({ direction }) => (
-  <img
-    src="./assets/images/arrow_down.png" // Ensure this path is correct for your project
+  <Image
+    src="/assets/images/arrow_down.png"
     alt="dropdown arrow"
     className="arrow-icon"
+    width={16} // Example width, adjust as needed
+    height={16} // Example height, adjust as needed
     style={{
       transform: direction === "right" ? "rotate(-90deg)" : "rotate(0deg)",
     }}
@@ -234,7 +196,7 @@ const MegaMenuContent = memo(
     useEffect(() => {
       const initialItem = getInitialActiveMainItem(menuItems);
       setActiveMainItemId(initialItem ? initialItem.id : null);
-    }, [menuItems, getInitialActiveMainItem, activeTopLevelItemId]); // Crucial dependencies
+    }, [menuItems, getInitialActiveMainItem, activeTopLevelItemId]); 
 
     const handleMainItemHover = useCallback((itemId) => {
       setActiveMainItemId(itemId);
@@ -260,7 +222,7 @@ const MegaMenuContent = memo(
                 onMouseEnter={() => handleMainItemHover(item.id)}
                 onMouseLeave={handleMainItemLeave}
               >
-                <Link to={item.link} onClick={onLinkClick}>
+                <Link href={item.link} onClick={onLinkClick}>
                   {item.label}
                   {item.children && item.children.length > 0 && (
                     <DropdownArrowIcon direction="right" />
@@ -275,7 +237,7 @@ const MegaMenuContent = memo(
             <ul className="category-links">
               {currentSubColumnData.map((subItem) => (
                 <li key={subItem.id}>
-                  <Link to={subItem.link} onClick={onLinkClick}>
+                  <Link href={subItem.link} onClick={onLinkClick}>
                     {subItem.label}
                   </Link>
                 </li>
@@ -304,7 +266,13 @@ const isPathActive = (menuItem, currentPath, activeDesktopDropdownId) => {
     }
   }
 
+  
   if (menuItem.link === currentPath) {
+    return true;
+  }
+
+
+  if (menuItem.link && currentPath.startsWith(menuItem.link) && menuItem.link !== "/") {
     return true;
   }
 
@@ -456,7 +424,7 @@ const MenuItem = memo(
       >
         {hasDropdown ? (
           <Link
-            to={item.link || "#"}
+            href={item.link || "#"}
             className="nav-link"
             onClick={handleItemClick}
           >
@@ -464,7 +432,7 @@ const MenuItem = memo(
             <DropdownArrowIcon />
           </Link>
         ) : (
-          <Link to={item.link} className="nav-link" onClick={handleItemClick}>
+          <Link href={item.link} className="nav-link" onClick={handleItemClick}>
             {item.label}
           </Link>
         )}
@@ -480,8 +448,7 @@ export default function Header() {
   const [activeDesktopDropdownId, setActiveDesktopDropdownId] = useState(null);
   const [isMobileView, setIsMobileView] = useState(false);
 
-  const location = useLocation();
-  const currentPath = location.pathname;
+  const currentPath = usePathname(); 
 
   useEffect(() => {
     const handleResize = () => {
@@ -543,7 +510,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      const navbar = document.querySelector(".nav-item");
+      const navbar = document.querySelector(".nav-menu"); // Targeting the whole nav-menu for outside click
       if (
         navbar &&
         !navbar.contains(event.target) &&
@@ -565,17 +532,36 @@ export default function Header() {
     };
   }, [activeDesktopDropdownId, isMobileView]);
 
+  useEffect(() => {
+    // In Next.js, useRouter().push handles scrolling to top by default on navigation
+    // However, if you have specific scroll restoration needs, you might add logic here.
+    // For typical navigation, this specific scroll to top is often not needed.
+    // window.scrollTo(0, 0);
+  }, [currentPath]); // This might not be strictly necessary with Next.js Link
+
   return (
     <Fragment>
       <div className="top-bar">
         <div className="container">
           <div className="contact-info">
             <a href="tel:9810000000">
-              <img src="./assets/images/phone_icon.png" alt="phone icon" />
+              <Image
+                src="/assets/images/phone_icon.png" 
+                alt="phone icon"
+                width={20} 
+                objectFit="contain"
+                height={20} 
+              />
               Toll Free 98100 00000
             </a>
             <a href="mailto:care@suntecinsurance.com">
-              <img src="./assets/images/message_icon.png" alt="message icon" />
+              <Image
+                src="/assets/images/message_icon.png" 
+                alt="message icon"
+                width={20} 
+                objectFit="contain"
+                height={20} 
+              />
               care@suntecinsurance.com
             </a>
           </div>
@@ -586,10 +572,13 @@ export default function Header() {
 
       <nav className="navbar">
         <div className="logo-wrapper">
-          <Link to="/">
-            <img
-              src="./assets/images/brand_logo.svg"
+          <Link href="/">
+            <Image
+              src="/assets/images/brand_logo.svg" 
               alt="Suntec Insurance Logo"
+              width={180} 
+              height={60} 
+              priority
             />
           </Link>
         </div>

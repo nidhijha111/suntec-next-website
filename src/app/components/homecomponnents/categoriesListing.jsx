@@ -1,8 +1,10 @@
-"use client"
 import React from "react";
 import { categoriesData } from "./homePageData.jsx";
+// import { useNavigate } from "react-router-dom";
 
 export default function CategoriesListing() {
+  // const navigate = useNavigate();
+
   return (
     <section className="categories_section">
       <div className="category-grid">
@@ -12,7 +14,7 @@ export default function CategoriesListing() {
               <div
                 className="category_grid_card"
                 key={index}
-                onClick={() => (window.location.href = "/product")}
+                // onClick={() => navigate("/product")}
               >
                 <div className="grid_card_icon_wrapper">
                   <img src={data?.path} alt={data?.altText} />

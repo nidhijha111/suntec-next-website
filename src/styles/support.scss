@@ -23,6 +23,7 @@
       height: 100%;
       object-fit: cover;
       max-height: 500px;
+       object-position: top center;
     }
   }
 
@@ -87,13 +88,20 @@
         color: $color-brand-yellow;
       }
 
-      input {
+      input,
+      select {
         padding: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         border: none;
         height: 45px;
         background: $color-whitish;
         width: 100%;
+
+        &:disabled {
+          cursor: not-allowed;
+          background-color: $color-creamish;
+          opacity: 1;
+        }
       }
 
       textarea {
@@ -171,6 +179,7 @@
 
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
+    padding: 20px;
     .form-wrapper-section,
     .help-line-info-section {
       padding: 40px 10px;
@@ -184,13 +193,20 @@
 
   @media (max-width: 469px) {
     .help-line-info-section {
+      padding: 20px 5px;
       .info-card-wrapper {
+        padding: 10px 5px;
         .info-heading-text {
           font-size: 20px;
         }
         .contact-info-text {
           gap: 5px;
-          font-size: 13px;
+          font-size: 12px;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
         }
       }
       .location-info-cards {
@@ -198,7 +214,7 @@
           font-size: 20px;
         }
         .location-items {
-            flex-direction: column;
+          flex-direction: column;
         }
       }
     }
