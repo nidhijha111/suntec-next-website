@@ -1,9 +1,9 @@
+"use client";
 import React from "react";
 import { categoriesData } from "./homePageData.jsx";
-// import { useNavigate } from "react-router-dom";
-
+import { useRouter } from "next/navigation";
 export default function CategoriesListing() {
-  // const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <section className="categories_section">
@@ -14,7 +14,7 @@ export default function CategoriesListing() {
               <div
                 className="category_grid_card"
                 key={index}
-                // onClick={() => navigate("/product")}
+                onClick={() => router.push('/product')}
               >
                 <div className="grid_card_icon_wrapper">
                   <img src={data?.path} alt={data?.altText} />
