@@ -12,7 +12,7 @@ const documentsData = {
     { text: "Driving License (DL) of Driver", iconColor: "yellow" },
     { text: "Original Insurance Policy", iconColor: "blue" },
   ],
-  column2Title: "", // The second column in the image doesn't have a distinct blue header text
+  column2Title: "", 
   column2Items: [
     { text: "Duly Filled Claim Form", iconColor: "blue" },
     { text: "Copy of FIR, if applicable", iconColor: "yellow" },
@@ -42,7 +42,6 @@ const DocumentsNeededSection = () => {
                     <span
                       className={`list-icon-wrapper icon-${item.iconColor}`}
                     >
-                      {/* <BsCheckLg className="list-icon" /> */}
                       <img
                         src="./assets/images/tick_icon.svg"
                         alt="tick icon"
@@ -60,7 +59,6 @@ const DocumentsNeededSection = () => {
                     <span
                       className={`list-icon-wrapper icon-${item.iconColor}`}
                     >
-                      {/* <BsCheckLg className="list-icon" /> */}
                       <img
                         src="./assets/images/tick_icon.svg"
                         alt="tick icon"

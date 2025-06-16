@@ -1,10 +1,9 @@
 import React from "react";
 
-// You can place this data array within the component or import it
 const coveragesData = [
   {
     id: "third-party",
-    title: "Third-party\ncoverage", // Using \n for potential line break hint
+    title: "Third-party\ncoverage", 
     variant: "blue",
     paragraphs: [
       "Section 146 of the Motor Vehicles Act of 1988, requires third-party coverage for all commercial vehicles.",
