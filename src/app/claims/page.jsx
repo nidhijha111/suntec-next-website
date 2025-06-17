@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BottomTopScrollSection from "../components/bottomTopScrollSection";
 
 export default function Claims() {
   const [selectedType, setSelectedType] = useState("commercial");
+  const [isClient, setIsClient] = useState(false);
   const insuranceTypes = [
     {
       id: "commercial",
@@ -43,6 +44,12 @@ export default function Claims() {
       icon: "/assets/images/other_categories_icon.svg",
     },
   ];
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
   return (
     <div className="container">
       <div className="claim_settalement_section">
@@ -141,12 +148,12 @@ export default function Claims() {
             <div className="yellow"> for support</div>
           </button>
           <button className="phone-button">
-            <img src="./assets/images/phone_icon.png" alt="phone icon" />
+            <img src="./assets/images/phone_icon.svg" alt="phone icon" />
             <span>Toll Free 98100 00000</span>
           </button>
           <button className="email-button">
             <img
-              src="./assets/images/blue_message_icon.png"
+              src="./assets/images/blue_message_icon.svg"
               alt="messages icon"
             />
             <span>support@suntecinsurance.com</span>

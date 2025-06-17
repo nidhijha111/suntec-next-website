@@ -127,7 +127,7 @@ const menuItemsData = [
     type: "standard-dropdown",
     menuData: [
       { id: "our-story", label: "Our Story", link: "/about" },
-      { id: "careers", label: "careers", link: "/about" },
+      { id: "careers", label: "Careers", link: "/about" },
     ],
   },
   { id: "support", label: "Support", link: "/support", children: [] },
@@ -171,11 +171,11 @@ const CloseIcon = memo(() => (
 
 const DropdownArrowIcon = memo(({ direction }) => (
   <Image
-    src="/assets/images/arrow_down.png"
+    src="/assets/images/arrow_down.svg"
     alt="dropdown arrow"
     className="arrow-icon"
-    width={16} // Example width, adjust as needed
-    height={16} // Example height, adjust as needed
+    width={16} 
+    height={16} 
     style={{
       transform: direction === "right" ? "rotate(-90deg)" : "rotate(0deg)",
     }}
@@ -543,21 +543,21 @@ export default function Header() {
           <div className="contact-info">
             <a href="tel:9810000000">
               <Image
-                src="/assets/images/phone_icon.png" 
+                src="/assets/images/phone_icon.svg" 
                 alt="phone icon"
-                width={20} 
+                width={24} 
                 objectFit="contain"
-                height={20} 
+                height={24} 
               />
               Toll Free 98100 00000
             </a>
             <a href="mailto:care@suntecinsurance.com">
               <Image
-                src="/assets/images/message_icon.png" 
+                src="/assets/images/message_icon.svg" 
                 alt="message icon"
-                width={20} 
+                width={24} 
                 objectFit="contain"
-                height={20} 
+                height={24} 
               />
               care@suntecinsurance.com
             </a>

@@ -26,6 +26,10 @@ export default function Page() {
         <SupportForm />
         <HelplineInfoSection />
       </section>
+      <section className="color-line-wrapper">
+        <div className="yellow-wrapper"></div>
+        <div className="blue-wrapper"></div>
+      </section>
       <BottomTopScrollSection />
     </div>
   );

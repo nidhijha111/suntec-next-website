@@ -33,6 +33,7 @@ export default function WhyWechooseSection() {
               <br />
               zero stress
             </div>
+            <div className="yellow-bg-line"></div>
             <p>
               Our claim support team facilitates putting all the documentation
               in place, prioritising speedy resolutions and bringing clarity to
@@ -50,6 +51,7 @@ export default function WhyWechooseSection() {
               <br />
               policies
             </div>
+            <div className="yellow-bg-line"></div>
             <p>
               We stay with you beyond the sale - helping you in facilitating
               claims, simplifying coverage, and providing a personal touch at
@@ -67,6 +69,7 @@ export default function WhyWechooseSection() {
               <br />
               documentation support
             </div>
+            <div className="yellow-bg-line"></div>
             <p>
               Our claims support team ensures that all your documents are
               organised and protected within a secure, easily accessible

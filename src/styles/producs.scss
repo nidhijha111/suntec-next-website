@@ -95,6 +95,7 @@
       }
     }
     @media (max-width: 962px) {
+      margin-bottom: 40px;
       grid-template-columns: 1fr;
     }
   }
@@ -106,7 +107,7 @@
 
     .info-text {
       width: 100%;
-      padding: 40px 30px;
+      padding: 60px;
       background: $color-brand-blue;
 
       .info-heading {
@@ -135,6 +136,9 @@
 
     @media (max-width: 962px) {
       grid-template-columns: 1fr;
+      .info-text{
+        padding: 20px;
+      }
     }
   }
 }
@@ -142,8 +146,7 @@
 .coverage-types-section {
   background-color: $color-greyish;
   padding: 60px 60px 20px 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px 0px;
 
   .section-title {
     text-align: center;
@@ -171,6 +174,10 @@
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
+
+    @media (max-width: 962px) {
+      gap: 40px;
+    }
   }
 
   .coverage-card {
@@ -217,7 +224,7 @@
     }
 
     .card-content {
-      padding: 25px 30px; // Previously $card-padding-vertical $card-padding-horizontal
+      padding: 25px 30px;
       flex-grow: 1;
       font-weight: 300;
       p {
@@ -262,6 +269,11 @@
     margin-top: 40px;
     padding: 0 15px;
     line-height: 1.5;
+    font-size: 13px;
+  }
+
+  @media (max-width: 962px) {
+    margin: 40px 0px;
   }
 
   @media (max-width: 600px) {
@@ -270,7 +282,7 @@
 }
 
 .major-benefits-section {
-  background-color: $color-sky-blue; // Light blue background for the section
+  background-color: $color-sky-blue;
   padding: 60px;
 
   .section-title {
@@ -303,7 +315,6 @@
   .benefit-card {
     background-color: $color-pure-white;
     border-radius: 0px;
-    // overflow: hidden;
     box-shadow: $box-shadow;
     display: flex;
     flex-direction: column;
@@ -334,6 +345,7 @@
         width: 100%;
         height: 100%;
         background-color: $color-creamish;
+        opacity: 0.6;
         clip-path: polygon(66% -1%, 0% 99%, 66% 97%);
         z-index: 0;
       }
@@ -375,7 +387,7 @@
     }
 
     .benefit-card-content {
-      padding: 20px 25px 25px;
+      padding: 45px 25px 25px 25px;
       text-align: left;
       flex-grow: 1;
 
@@ -487,6 +499,7 @@
       border-style: solid;
       border-radius: 10px;
       flex-grow: 1;
+      text-align: center;
 
       p {
         font-size: 15px;
@@ -698,7 +711,7 @@
     }
   }
   @media (max-width: 962px) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -830,12 +843,16 @@
 .disclaimer-text-group {
   margin: 20px auto 60px auto;
   padding: 0px 60px;
+  font-size: 13px;
   .disclaimer-note {
     margin-bottom: 8px;
     font-weight: 300;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  @media (max-width: 962px) {
+    margin-bottom: 40px;
   }
   @media (max-width: 600px) {
     padding: 20px;

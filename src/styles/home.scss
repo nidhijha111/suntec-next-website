@@ -108,7 +108,7 @@ h1 {
 }
 
 .our_patners_section {
-  padding: 40px 0px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -125,6 +125,9 @@ h1 {
     .our_patners_info_conatiner {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+  }
+  @media (max-width: 962px) {
+    margin-top: 40px;
   }
   @media (max-width: 900px) {
     .our_patners_info_conatiner {
@@ -152,7 +155,6 @@ h1 {
 }
 
 .how_we_work_section {
-  padding: 40px 0px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -229,11 +231,13 @@ h1 {
   .our_work_some_info_wrapper {
     text-align: center;
     margin-top: 30px;
+    font-size: 13px;
+    padding: 0px 20px;
   }
 
   .our_location_warapper_section {
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
 
     .map_image_wrapper {
       width: 50%;
@@ -262,6 +266,7 @@ h1 {
     }
     @media (max-width: 1024px) {
       flex-direction: column;
+      margin-top: 40px;
       .map_image_wrapper {
         width: 100%;
       }
@@ -276,7 +281,7 @@ h1 {
 .about_our_services_section {
   display: flex;
   align-items: center;
-  padding: 40px 0px;
+  padding: 60px 0px;
   justify-content: center;
 
   .about_work_info_text {
@@ -285,23 +290,45 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 80px;
+    padding: 0px 60px;
+    width: 65%;
 
     .line_wrapper {
       height: 3px;
       width: 120px;
       background-color: $color-brand-yellow;
-      margin: 30px 0px;
+      margin: 30px 0px 23px 0px;
     }
 
     .text_wrapper {
-      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0px 20px;
+    }
+    .extra-padding {
+      padding: 0px 50px;
+    }
+  }
+  .about-work-rght-text {
+    width: 35%;
+    text-align: left;
+    img {
+      width: 100%;
+      object-fit: contain;
+      max-height: 400px;
     }
   }
 
   @media (max-width: 996px) {
     flex-direction: column;
-    row-gap: 40px;
+    padding: 40px 0px;
+    row-gap: 20px;
+    .about_work_info_text {
+      width: 100%;
+      padding: 0px;
+    }
+    .about-work-rght-text {
+      width: 100%;
+    }
   }
   @media (max-width: 768px) {
     .about_work_info_text {
@@ -316,7 +343,7 @@ h1 {
 }
 
 .why-suntec-section {
-  padding: 40px 0px;
+  margin-bottom: 60px;
 
   .why-suntec-container {
     width: 100%;
@@ -372,8 +399,14 @@ h1 {
         .card-title {
           font-weight: 500;
           color: $color-brand-blue;
-          margin-bottom: 15px;
           line-height: 1.4;
+          min-height: 63px;
+        }
+
+        .yellow-bg-line {
+          border-bottom: 3px solid $color-brand-yellow;
+          width: 80px;
+          margin: 20px auto 10px auto;
         }
 
         p {
@@ -392,6 +425,7 @@ h1 {
   }
 
   @media (max-width: 991px) {
+    margin-bottom: 40px;
     .why-suntec-container {
       flex-direction: column;
 

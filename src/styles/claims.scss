@@ -219,6 +219,12 @@
       justify-content: flex-start;
       align-items: center;
     }
+    .email-button ,.phone-button{
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
     .border-button {
       background: none;
       border: 2px solid $color-brand-blue;

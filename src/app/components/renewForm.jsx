@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function RenuwForm() {
   const [selectedType, setSelectedType] = useState("commercial");
+  const [isClient, setIsClient] = useState(false);
   const insuranceTypes = [
     {
       id: "commercial",
@@ -42,6 +43,12 @@ export default function RenuwForm() {
       icon: "/assets/images/other_categories_icon.svg",
     },
   ];
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
   return (
     <div>
       <div className="hero-common-section">

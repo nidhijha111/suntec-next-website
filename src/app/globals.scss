@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Helvetica Neue";
   src: url("/fonts/HelveticaNeueBlack.otf") format("opentype");
-  font-weight: 900; 
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -127,7 +127,6 @@ body {
   height: 100%;
   font-weight: 300;
   letter-spacing: 0.9px;
-  // line-height: 1.5;
 }
 
 body,
@@ -232,6 +231,7 @@ footer {
 .main_heading_text {
   font-size: $font-size-heading;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .blue {
@@ -420,9 +420,9 @@ input:focus,
 input:active,
 select:focus,
 select:active {
-  outline: none; 
-  border: none; 
-  box-shadow: none; 
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 input,
 select {

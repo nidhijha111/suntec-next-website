@@ -1,10 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function SupportForm() {
   const [selectQueryValue, setSelectQueryValue] = useState();
   const [prodctType, setProductType] = useState("");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
+
   return (
     <form className="form-wrapper-section">
       <div className="form-wrapper">
@@ -23,8 +31,9 @@ export default function SupportForm() {
         <label> Subject*</label>
         <select
           placeholder="Select query"
-          onChange={(e) => {setSelectQueryValue(e.target.value);
-            setProductType('');
+          onChange={(e) => {
+            setSelectQueryValue(e.target.value);
+            setProductType("");
           }}
         >
           <option value={""}>Select query</option>

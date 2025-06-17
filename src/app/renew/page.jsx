@@ -31,12 +31,12 @@ export default function Page() {
 
           <div className="contact-buttons">
             <button className="phone-button">
-              <img src="./assets/images/phone_icon.png" alt="phone icon" />
+              <img src="./assets/images/phone_icon.svg" alt="phone icon" />
               <span>Toll Free 98100 00000</span>
             </button>
             <button className="email-button">
               <img
-                src="./assets/images/blue_message_icon.png"
+                src="./assets/images/blue_message_icon.svg"
                 alt="messages icon"
               />
               <span>support@suntecinsurance.com</span>
