@@ -180,6 +180,16 @@ footer {
     text-align: center;
     font-weight: 300;
     letter-spacing: 0.9px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    img{
+      margin-top: 9px;
+    }
+    >div{
+      padding-left: 3px;
+    }
   }
 
   @media (max-width: 1100px) {
