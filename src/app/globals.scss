@@ -453,3 +453,9 @@ input::placeholder {
     font-weight: 500;
   }
 }
+
+select {
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+}
