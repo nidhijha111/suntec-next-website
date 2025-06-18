@@ -64,8 +64,9 @@ export default function CommonHeaderForm({ headerText }) {
             : selectedType === "commercial"
             ? "commercial_vehicle"
             : "other",
-        registration_no: registrationNo,
+        registration_no: registrationNo || undefined,
         vehicle_type: selectedType !== "other" ? vehicleType : undefined,
+        name:name || undefined,
         mobile_no: mobileNo,
         email_address: email,
         source: "homepage_form",
