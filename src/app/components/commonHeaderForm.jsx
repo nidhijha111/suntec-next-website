@@ -12,6 +12,7 @@ export default function CommonHeaderForm({ headerText }) {
   const [email, setEmail] = useState("");
   const [productType, setProductType] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [name, setName] = useState("");
 
   useEffect(() => {
     setIsClient(true);
@@ -27,19 +28,20 @@ export default function CommonHeaderForm({ headerText }) {
     setProductType("");
     setAcceptedTerms(false);
     setSelectedType("commercial");
+    setName("");
   };
 
   const validateForm = () => {
-    if (!registrationNo) return "Registration No is required.";
+    if (selectedType === "other") {
+      if (!name) return "Name is required Other category.";
+      if (!productType) return "Product Type is required for Other category.";
+    } else {
+      if (!registrationNo) return "Registration No is required.";
+      if (!vehicleType) return "Vehicle Type is required.";
+    }
     if (!mobileNo) return "Mobile number is required.";
     if (!email) return "Email address is required.";
     if (!acceptedTerms) return "Please accept Terms and Conditions.";
-
-    if (selectedType === "other") {
-      if (!productType) return "Product Type is required for Other category.";
-    } else {
-      if (!vehicleType) return "Vehicle Type is required.";
-    }
 
     return null;
   };
@@ -146,7 +148,9 @@ export default function CommonHeaderForm({ headerText }) {
         {insuranceTypes.map((type) => (
           <div
             key={type.id}
-            className={`type-option ${selectedType === type.id ? "active" : ""}`}
+            className={`type-option ${
+              selectedType === type.id ? "active" : ""
+            }`}
             onClick={() => setSelectedType(type.id)}
           >
             <div className="icon-wrapper">
@@ -159,13 +163,23 @@ export default function CommonHeaderForm({ headerText }) {
 
       <form className="insurance-form" onSubmit={handleSubmit}>
         <div className="form_input_wrapper">
-          <input
-            type="text"
-            className="hero_section_input"
-            placeholder="Enter Registration No.*"
-            value={registrationNo}
-            onChange={(e) => setRegistrationNo(e.target.value)}
-          />
+          {selectedType !== "other" ? (
+            <input
+              type="text"
+              className="hero_section_input"
+              placeholder="Enter Registration No.*"
+              value={registrationNo}
+              onChange={(e) => setRegistrationNo(e.target.value)}
+            />
+          ) : (
+            <input
+              type="text"
+              className="hero_section_input"
+              placeholder="Enter Name*"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          )}
 
           {(selectedType === "car" || selectedType === "bike") && (
             <select
