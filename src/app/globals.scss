@@ -313,6 +313,12 @@ footer {
         justify-content: center;
         background-color: $color-pure-white;
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+
+        img {
+          width: 55px;
+          object-fit: contain;
+          max-height: 55px;
+        }
       }
 
       .label {
@@ -331,6 +337,22 @@ footer {
         }
       }
     }
+    @media (max-width: 1300px) {
+      gap: 25px;
+      .type-option {
+        .icon-wrapper {
+          width: 75px;
+          height: 75px;
+          img {
+            img {
+              width: 55px;
+              object-fit: contain;
+              max-height: 55px;
+            }
+          }
+        }
+      }
+    }
     @media (max-width: 597px) {
       margin-top: 40px;
       gap: 20px;
@@ -344,6 +366,7 @@ footer {
           img {
             width: 40px;
             object-fit: contain;
+            max-height: 40px;
           }
         }
       }
