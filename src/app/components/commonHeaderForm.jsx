@@ -185,7 +185,7 @@ export default function CommonHeaderForm({ headerText }) {
               value={vehicleType}
               onChange={(e) => setVehicleType(e.target.value)}
             >
-              <option value="">Select vehicle Type*</option>
+              <option value="">Select Vehicle Type*</option>
               <option value="GCCV">GCCV</option>
               <option value="PCCV">PCCV</option>
             </select>
