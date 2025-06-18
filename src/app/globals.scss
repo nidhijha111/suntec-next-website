@@ -184,10 +184,10 @@ footer {
     align-items: flex-start;
     justify-content: center;
 
-    img{
+    img {
       margin-top: 9px;
     }
-    >div{
+    > div {
       padding-left: 3px;
     }
   }
@@ -269,10 +269,11 @@ footer {
   justify-content: center;
   background-color: $color-brand-yellow;
   border: none;
-  border-radius: 15px;
+  border-radius: 12px;
   color: $color-brand-blue;
   cursor: pointer;
-  font-weight: 500;
+  font-size: 15px;
+  // font-weight: 500;
 
   &:hover {
     background-color: $color-brand-yellow;
@@ -455,7 +456,12 @@ input::placeholder {
 }
 
 select {
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
-  appearance: none; 
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  position: relative;
+  padding-right: 30px !important;
+  background-image: url("./arrow_down.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
 }

@@ -44,34 +44,36 @@ export default function SupportForm() {
           <option value={"Others"}>Others</option>
         </select>
       </div>
-      <div className="form-wrapper">
-        <label> Product</label>
-        <select
-          placeholder="Select Product type"
-          value={prodctType}
-          disabled={selectQueryValue !== "Product query"}
-          onChange={(e) => setProductType(e.target.value)}
-        >
-          <option>Select Product type</option>
-          <option>Road Insurance</option>
-          <option> Marine Insurance</option>
-          <option> Aviation Insurance</option>
-          <option> Home Insurance</option>
-          <option>Business Insurance</option>
-          <option> Travel Insurance</option>
-          <option> Health Insurance</option>
-          <option>Personal Accident Insurance</option>
-          <option> Public Liability Insurance</option>
-          <option>Fidelity Guarantee Insurance</option>
-          <option> Cyber Crime Insurance</option>
-          <option>Life Insurance </option>
-        </select>
-      </div>
+      {selectQueryValue == "Product query" && (
+        <div className="form-wrapper">
+          <label> Product</label>
+          <select
+            placeholder="Select Product type"
+            value={prodctType}
+            disabled={selectQueryValue !== "Product query"}
+            onChange={(e) => setProductType(e.target.value)}
+          >
+            <option>Select Product type</option>
+            <option>Road Insurance</option>
+            <option> Marine Insurance</option>
+            <option> Aviation Insurance</option>
+            <option> Home Insurance</option>
+            <option>Business Insurance</option>
+            <option> Travel Insurance</option>
+            <option> Health Insurance</option>
+            <option>Personal Accident Insurance</option>
+            <option> Public Liability Insurance</option>
+            <option>Fidelity Guarantee Insurance</option>
+            <option> Cyber Crime Insurance</option>
+            <option>Life Insurance </option>
+          </select>
+        </div>
+      )}
       <div className="form-wrapper">
         <label> Comments</label>
         <textarea rows="7"></textarea>
       </div>
-      <button className="submit_button">submit</button>
+      <button className="submit_button">Submit</button>
     </form>
   );
 }
