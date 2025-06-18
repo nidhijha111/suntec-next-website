@@ -1,11 +1,8 @@
-
-"use client"; 
+"use client";
 import React, { Fragment, useState, useEffect, useCallback, memo } from "react";
 import Link from "next/link";
-import Image from "next/image"; 
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-
-
 
 const productsMenuData = [
   {
@@ -174,8 +171,8 @@ const DropdownArrowIcon = memo(({ direction }) => (
     src="/assets/images/arrow_down.svg"
     alt="dropdown arrow"
     className="arrow-icon"
-    width={16} 
-    height={16} 
+    width={16}
+    height={16}
     style={{
       transform: direction === "right" ? "rotate(-90deg)" : "rotate(0deg)",
     }}
@@ -196,7 +193,7 @@ const MegaMenuContent = memo(
     useEffect(() => {
       const initialItem = getInitialActiveMainItem(menuItems);
       setActiveMainItemId(initialItem ? initialItem.id : null);
-    }, [menuItems, getInitialActiveMainItem, activeTopLevelItemId]); 
+    }, [menuItems, getInitialActiveMainItem, activeTopLevelItemId]);
 
     const handleMainItemHover = useCallback((itemId) => {
       setActiveMainItemId(itemId);
@@ -266,13 +263,15 @@ const isPathActive = (menuItem, currentPath, activeDesktopDropdownId) => {
     }
   }
 
-  
   if (menuItem.link === currentPath) {
     return true;
   }
 
-
-  if (menuItem.link && currentPath.startsWith(menuItem.link) && menuItem.link !== "/") {
+  if (
+    menuItem.link &&
+    currentPath.startsWith(menuItem.link) &&
+    menuItem.link !== "/"
+  ) {
     return true;
   }
 
@@ -320,6 +319,7 @@ const MenuItem = memo(
         e.stopPropagation();
 
         if (hasDropdown) {
+          e.preventDefault();
           const newSubmenuOpenState = !isSubmenuOpen;
           setIsSubmenuOpen(newSubmenuOpenState);
 
@@ -448,7 +448,7 @@ export default function Header() {
   const [activeDesktopDropdownId, setActiveDesktopDropdownId] = useState(null);
   const [isMobileView, setIsMobileView] = useState(false);
 
-  const currentPath = usePathname(); 
+  const currentPath = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
@@ -510,7 +510,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      const navbar = document.querySelector(".nav-menu"); 
+      const navbar = document.querySelector(".nav-menu");
       if (
         navbar &&
         !navbar.contains(event.target) &&
@@ -534,7 +534,7 @@ export default function Header() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [currentPath]); 
+  }, [currentPath]);
 
   return (
     <Fragment>
@@ -543,21 +543,21 @@ export default function Header() {
           <div className="contact-info">
             <a href="tel:9810000000">
               <Image
-                src="/assets/images/phone_icon.svg" 
+                src="/assets/images/phone_icon.svg"
                 alt="phone icon"
-                width={24} 
+                width={24}
                 objectFit="contain"
-                height={24} 
+                height={24}
               />
               Toll Free 98100 00000
             </a>
             <a href="mailto:care@suntecinsurance.com">
               <Image
-                src="/assets/images/message_icon.svg" 
+                src="/assets/images/message_icon.svg"
                 alt="message icon"
-                width={24} 
+                width={24}
                 objectFit="contain"
-                height={24} 
+                height={24}
               />
               care@suntecinsurance.com
             </a>
@@ -571,10 +571,10 @@ export default function Header() {
         <div className="logo-wrapper">
           <Link href="/">
             <Image
-              src="/assets/images/brand_logo.svg" 
+              src="/assets/images/brand_logo.svg"
               alt="Suntec Insurance Logo"
-              width={180} 
-              height={60} 
+              width={180}
+              height={60}
               priority
             />
           </Link>
