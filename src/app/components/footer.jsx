@@ -80,10 +80,10 @@ export default function Footer() {
             Marg, Bhandup West, Mumbai, Maharashtra 400078
           </div>
           <div>
-            <span className="bold-text">Toll Free</span> 00000000000 98100
+            <span className="bold-text">Toll Free : </span> 00000000000 98100
           </div>
           <div>
-            <span className="bold-text">Landline</span> 022 45197023
+            <span className="bold-text">Landline : </span> 022 45197023
           </div>
           <div className="footer_head_link">Email</div>
           <div>Support : care@suntecinsurance.com</div>
