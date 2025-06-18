@@ -133,7 +133,7 @@ export default function ProductHeroSection() {
               <input
                 className="hero_section_input"
                 type="text"
-                placeholder="Enter Policy No."
+                placeholder="Enter Policy No.*"
                 value={policyNo}
                 onChange={(e) => setPolicyNo(e.target.value)}
               />
