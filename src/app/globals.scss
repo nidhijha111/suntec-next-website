@@ -136,7 +136,7 @@ html,
 }
 
 footer {
-  padding: 30px 96px;
+  padding: 60px 96px;
   font-size: 15px;
   line-height: 1.6;
   color: $font-color;
@@ -193,7 +193,7 @@ footer {
   }
 
   @media (max-width: 1100px) {
-    padding: 30px 20px;
+    padding: 40px 20px;
   }
   @media (max-width: 992px) {
     .footer-grid {
@@ -288,7 +288,7 @@ footer {
   justify-content: center;
 
   .margin-bottom {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .insurance-types {
@@ -322,7 +322,7 @@ footer {
       }
 
       .label {
-        margin-top: 8px;
+        margin-top: 12px;
         color: $font-color;
         font-weight: 500;
       }
@@ -393,7 +393,7 @@ footer {
     }
 
     .hero_section_input {
-      padding: 10px;
+      padding: 10px 20px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
       border: none;
       height: 45px;
@@ -420,6 +420,9 @@ footer {
       }
     }
   }
+  @media(max-width:1396px){
+    padding: 60px 40px;
+  }
   @media (max-width: 991px) {
     padding: 20px;
     width: 100%;
@@ -437,19 +440,7 @@ footer {
   }
 }
 
-.scroll-down-indicator {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto 0px auto;
 
-  img {
-    width: 30px;
-    height: 30px;
-    animation: bounce 2s infinite;
-  }
-}
 
 input:focus,
 input:active,
@@ -465,6 +456,11 @@ select {
 }
 input::placeholder {
   color: $font-color;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 40px;
+  }
 }
 @media (max-width: 1100px) {
   .container {
@@ -484,8 +480,8 @@ select {
   -moz-appearance: none !important;
   appearance: none !important;
   position: relative;
-  padding-right: 30px !important;
+  padding-right: 40px !important;
   background-image: url("./arrow_down.svg") !important;
   background-repeat: no-repeat !important;
-  background-position: right 12px center !important;
+  background-position: right 30px center !important;
 }

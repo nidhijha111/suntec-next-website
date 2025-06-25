@@ -1,5 +1,4 @@
 import React from "react";
-import BottomTopScrollSection from "../components/bottomTopScrollSection";
 
 export default function Page() {
   return (
@@ -135,7 +134,6 @@ export default function Page() {
           </div>
         </section>
       </div>
-      <BottomTopScrollSection/>
     </div>
   );
 }

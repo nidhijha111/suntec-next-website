@@ -5,14 +5,8 @@
   background-color: $color-greyish;
   border-radius: 15px;
   padding: 20px;
-  gap: 40px;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
-
-  .left-panel,
-  .right-panel {
-    padding: 20px;
-  }
 
   .right-panel {
     background-color: $color-whitish;
@@ -82,14 +76,14 @@
       button {
         display: flex;
         align-items: center;
-        gap: 10px;
-        padding: 12px 20px;
+        gap: 5px;
+        padding: 10px;
         border-radius: 8px;
-        font-weight: 500;
         cursor: pointer;
         transition: all 0.3s ease;
         width: 50%;
         justify-content: center;
+        word-break: break-all;
       }
 
       .phone-button {
@@ -118,6 +112,10 @@
         svg {
           stroke: $color-brand-blue;
         }
+      }
+
+      @media(max-width:1200px){
+
       }
 
       @media (max-width: 650px) {

@@ -573,8 +573,8 @@ export default function Header() {
             <Image
               src="/assets/images/brand_logo.svg"
               alt="Suntec Insurance Logo"
-              width={180}
-              height={60}
+              width={216}
+              height={75}
               priority
             />
           </Link>

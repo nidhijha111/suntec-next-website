@@ -76,14 +76,15 @@
     background-color: $color-brand-blue;
     padding: 60px;
     border-radius: 10px;
-    display: grid;
-    gap: 20px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 
     .form-wrapper {
       display: flex;
-      flex-direction: column;
       row-gap: 10px;
+      flex-direction: column;
 
       label {
         color: $color-brand-yellow;
@@ -91,12 +92,13 @@
 
       input,
       select {
-        padding: 10px;
+        padding: 10px 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         border: none;
         height: 45px;
         background: $color-whitish;
         width: 100%;
+        margin: 0px !important;
 
         &:disabled {
           cursor: not-allowed;

@@ -1,5 +1,4 @@
 import React from "react";
-import BottomTopScrollSection from '../components/bottomTopScrollSection'
 import RenuwForm from "../components/renewForm";
 
 export default function Page() {
@@ -43,11 +42,10 @@ export default function Page() {
             </button>
           </div>
         </div>
-        <div className="right-panel ">
+        <div className="right-panel">
           <RenuwForm />
         </div>
       </div>
-      <BottomTopScrollSection />
     </div>
   );
 }

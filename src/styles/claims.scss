@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid $color-brand-blue;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 
   .line_wrapper {
     height: 3px;
@@ -37,10 +37,14 @@
         align-items: center;
         justify-content: center;
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+
+        img{
+          max-width: 55px;
+        }
       }
 
       .label {
-        margin-top: 8px;
+        margin-top: 12px;
         color: $font-color;
         font-weight: 500;
       }
@@ -104,7 +108,7 @@
 
     .hero_section_input,
     select {
-      padding: 10px;
+      padding: 10px 20px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
       border: none;
       height: 45px;

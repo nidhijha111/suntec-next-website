@@ -3,7 +3,7 @@ import React from "react";
 export default function HowdoweWork() {
   return (
     <section className="how_we_work_section">
-      <div className="main_heading_text blue"> How do we Work?</div>
+      <div className="main_heading_text blue"> How do we work?</div>
       <div className="heading_underline_border"></div>
       <div className="heading_para">
         At Suntec Insurance, excellent service means being fast, clear, and
@@ -97,18 +97,18 @@ export default function HowdoweWork() {
         </div>
       </div>
       <div className="our_work_some_info_wrapper">
-        <div>
+        <p>
           Disclaimer : Suntec Insurance Broking Private Limited acts solely as a
           facilitator. The final decision on claim settlement rests entirely
           with the respective insurer. For complete details on risk factors,
           terms and conditions, please refer to the insurer’s sales brochure
           before making a purchase. Standard terms and conditions apply.
-        </div>
-        <div>
+        </p>
+        <p>
           Disclaimer : Suntec Insurance Broking Private Limited does not
           endorse, rate or recommend any particular insurer or any Insurance
           product offered by any insurer.
-        </div>
+        </p>
       </div>
       <div className="our_location_warapper_section">
         <div className="map_image_wrapper">

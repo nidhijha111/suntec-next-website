@@ -36,7 +36,7 @@ export default function MajorBenefits() {
     <>
       <section className="major-benefits-section">
         <div className="section-title main_heading_text">
-          <div className="blue">Major benefit of goods-carrying</div>
+          <div className="blue">Major benefits of goods-carrying</div>
           <div className="yellow"> vehicle Insurance?</div>
         </div>
         <div className="benefits-grid">

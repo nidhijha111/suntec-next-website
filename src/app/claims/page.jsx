@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import BottomTopScrollSection from "../components/bottomTopScrollSection";
 
 export default function Claims() {
   const [selectedType, setSelectedType] = useState("commercial");
@@ -130,7 +129,7 @@ export default function Claims() {
           </div>
         </form>
       </div>
-      <BottomTopScrollSection />
+
       <div className="claim-help-section">
         <div>
           <div className="main_heading_text">
@@ -160,7 +159,6 @@ export default function Claims() {
           </button>
         </div>
       </div>
-      <BottomTopScrollSection />
     </div>
   );
 }

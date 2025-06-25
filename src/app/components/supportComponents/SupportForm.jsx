@@ -6,6 +6,9 @@ export default function SupportForm() {
   const [selectQueryValue, setSelectQueryValue] = useState();
   const [prodctType, setProductType] = useState("");
   const [isClient, setIsClient] = useState(false);
+  const [name, setName] = useState("");
+  const [mobileNumber, setMobileNumber] = useState();
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     setIsClient(true);
@@ -13,19 +16,38 @@ export default function SupportForm() {
 
   if (!isClient) return null;
 
-  return (
+  const submitHandler = (e) =>{
+    e.preventDefault();
+  }
+   return (
     <form className="form-wrapper-section">
       <div className="form-wrapper">
         <label>Name*</label>
-        <input placeholder="Name your Enter" />
+        <input
+          placeholder="Enter Name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
       </div>
       <div className="form-wrapper">
         <label> Mobile No *</label>
-        <input placeholder="Enter your Mobile No." />
+        <input
+          placeholder="Enter Mobile No."
+          value={mobileNumber}
+          onChange={(e) => {
+            setMobileNumber(e.target.value);
+          }}
+        />
       </div>
       <div className="form-wrapper">
         <label> Email*</label>
-        <input placeholder="Enter your Email Address" />
+        <input
+          placeholder="Enter Email Address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </div>
       <div className="form-wrapper">
         <label> Subject*</label>
@@ -71,9 +93,9 @@ export default function SupportForm() {
       )}
       <div className="form-wrapper">
         <label> Comments</label>
-        <textarea rows="7"></textarea>
+        <textarea rows="18"></textarea>
       </div>
-      <button className="submit_button">Submit</button>
+      <button className="submit_button" onClick={submitHandler}>Submit</button>
     </form>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import SupportForm from "../components/supportComponents/SupportForm";
 import HelplineInfoSection from "../components/supportComponents/HelplineInfoSection";
-import BottomTopScrollSection from "../components/bottomTopScrollSection";
 
 export default function Page() {
   return (
@@ -30,7 +29,6 @@ export default function Page() {
         <div className="yellow-wrapper"></div>
         <div className="blue-wrapper"></div>
       </section>
-      <BottomTopScrollSection />
     </div>
   );
 }
