@@ -138,7 +138,7 @@ export default function CommonHeaderForm({ headerText }) {
       {headerText && (
         <>
           <div className="main_heading_text">
-            <div className="blue">Insurance , Simplified.</div>
+            <div className="blue">Insurance, Simplified.</div>
             <div className="yellow">Buy or Renew.</div>
           </div>
           <div className="margin-bottom"></div>

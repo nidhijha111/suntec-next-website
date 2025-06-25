@@ -58,7 +58,7 @@
         }
 
         .hero_section_input {
-          padding: 10px;
+          padding: 10px 20px;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
           border: none;
           height: 45px;
@@ -858,5 +858,14 @@
   }
   @media (max-width: 600px) {
     padding: 20px;
+  }
+}
+
+
+.documnet-first-item{
+  margin-right: 70px;
+ 
+  @media(max-width:900px){
+     margin-right: 0px;
   }
 }

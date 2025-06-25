@@ -12,7 +12,7 @@ const documentsData = {
     { text: "Driving License (DL) of Driver", iconColor: "yellow" },
     { text: "Original Insurance Policy", iconColor: "blue" },
   ],
-  column2Title: "", 
+  column2Title: "",
   column2Items: [
     { text: "Duly Filled Claim Form", iconColor: "blue" },
     { text: "Copy of FIR, if applicable", iconColor: "yellow" },
@@ -38,7 +38,10 @@ const DocumentsNeededSection = () => {
             <div className="documents-column">
               <ul>
                 {documentsData.column1Items.map((item, index) => (
-                  <li key={`col1-${index}`}>
+                  <li
+                    key={`col1-${index}`}
+                    className={`${index === 0 ? "documnet-first-item" : ""}`}
+                  >
                     <span
                       className={`list-icon-wrapper icon-${item.iconColor}`}
                     >
