@@ -14,7 +14,7 @@ export const categoriesData = [
   {
     id: 3,
     path: "./assets/images/two_wheeler_icon.svg",
-    text: <>Two-wheeler<br/> Insurances</>,
+    text: <>Two-wheeler<br/> Insurance</>,
     altText: "Two-wheeler Insurances",
   },
   {
@@ -80,7 +80,7 @@ export const categoriesData = [
   {
     id: 14,
     path: "./assets/images/cyber_crime_insurence.svg",
-    text: <>Cyber Crime<br/> Insurance</>,
-    altText: "Cyber Crime Insurance",
+    text: <>Cyber<br/> Insurance</>,
+    altText: "Cyber Insurance",
   },
 ];

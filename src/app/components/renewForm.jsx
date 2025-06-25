@@ -83,7 +83,7 @@ export default function RenuwForm() {
                 <option>Personal Accident Insurance</option>
                 <option>Public Liability Insurance</option>
                 <option> Fidelity Guarantee Insurance</option>
-                <option>Cyber Crime Insurance</option>
+                <option>Cyber Insurance</option>
                 <option> Life Insurance</option>
               </select>
             ) : (

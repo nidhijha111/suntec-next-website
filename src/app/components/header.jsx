@@ -100,7 +100,7 @@ const productsMenuData = [
       },
       {
         id: "cyber-crime-insurance",
-        label: "Cyber Crime Insurance",
+        label: "Cyber Insurance",
         link: "/product",
       },
     ],

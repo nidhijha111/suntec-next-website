@@ -145,7 +145,7 @@ footer {
     border-bottom: 1px solid $font-color;
     padding: 60px 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 180px 1fr 1fr 1fr;
     margin-bottom: 60px;
 
     .footer_link_wrapper {
@@ -183,12 +183,23 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
+
+    .small-dot{
+      width: 4px;
+      height: 4px;
+      background-color: $font-color;
+      border-radius: 100%;
+      display: inline-block;
+      margin: -3px 3px 0px 0px;
+    }
 
     img {
       margin-top: 9px;
     }
     > div {
-      padding-left: 3px;
+      text-align: center;
+      word-wrap: break-word;
     }
   }
 
