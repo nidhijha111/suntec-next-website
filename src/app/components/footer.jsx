@@ -119,17 +119,18 @@ export default function Footer() {
       <div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot"></span> Suntec Insurance Broking Private
-            Limited <span className="red">CIN : U74999HR2014PTC053454</span>,
-            Registered Office : B 206, 2nd Floor, Eastern Business District, Lal
-            Bahadur Shastri Marg, Bhandup West, Mumbai, Maharashtra 400078, Tel
-            No. : 022 45197023 I Email ID : care@suntecinsurance.com
+            <span className="small-dot">&bull;</span> Suntec Insurance Broking
+            Private Limited{" "}
+            <span className="red">CIN : U74999HR2014PTC053454</span>, Registered
+            Office : B 206, 2nd Floor, Eastern Business District, Lal Bahadur
+            Shastri Marg, Bhandup West, Mumbai, Maharashtra 400078, Tel No. :
+            022 45197023 I Email ID : care@suntecinsurance.com
           </div>
         </div>
         <div className="spacing-top"></div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot"></span> Suntec Insurance is registered
+            <span className="small-dot">&bull;</span> Suntec Insurance is registered
             as a Direct Insurance Broker (Life and General) I Registration
             No.1044, Valid till 03/03/2028, Registration Code IRDAI/DB1159/2024,
             License category : Direct Insurance Broker (Life and General)
@@ -138,7 +139,7 @@ export default function Footer() {
         <div className="spacing-top"></div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot"></span> Disclaimer : Suntec Insurance
+            <span className="small-dot">&bull;</span> Disclaimer : Suntec Insurance
             Broking Private Limited acts solely as a facilitator. The final
             decision on claim settlement rests entirely with the respective
             insurer. For complete details on risk factors, terms and conditions,
@@ -148,14 +149,14 @@ export default function Footer() {
         </div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot"></span> Disclaimer : Suntec Insurance
+            <span className="small-dot">&bull;</span> Disclaimer : Suntec Insurance
             Broking Private Limited does not endorse, rate or recommend any
             particular insurer or any insurance product offered by any insurer.
           </div>
         </div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot"></span> Disclaimer : The information
+            <span className="small-dot">&bull;</span> Disclaimer : The information
             provided on our website is intended to offer an overview of
             Insurance products and services. For complete and detailed
             information, please refer to the respective insurer’s official
@@ -165,7 +166,7 @@ export default function Footer() {
         <div className="spacing-top"></div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot"></span> Visitors are hereby informed
+            <span className="small-dot">&bull;</span> Visitors are hereby informed
             that their information submitted on the website may be shared with
             insurers.
           </div>

@@ -186,12 +186,8 @@ footer {
     width: 100%;
 
     .small-dot{
-      width: 4px;
-      height: 4px;
-      background-color: $font-color;
-      border-radius: 100%;
-      display: inline-block;
-      margin: -3px 3px 0px 0px;
+      font-size: 10px;
+      margin-right: 3px;
     }
 
     img {
