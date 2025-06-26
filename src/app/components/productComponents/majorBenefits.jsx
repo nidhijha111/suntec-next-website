@@ -58,7 +58,7 @@ export default function MajorBenefits() {
       <section className="disclaimer-text-group">
         <p className="disclaimer-note">
           Disclaimer : The information provided on our website is intended to
-          offer a overview of insurance products and services. For complete and
+          offer an overview of Insurance products and services. For complete and
           detailed information please refer to the respective insurer's official
           website and product documents.
         </p>

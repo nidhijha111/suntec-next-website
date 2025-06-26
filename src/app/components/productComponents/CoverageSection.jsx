@@ -23,7 +23,7 @@ const coveragesData = [
     title: "Comprehensive\ncoverage",
     variant: "blue",
     paragraphs: [
-      "Comprehensive commercial vehicle Insurance offer complete protection for your vehicle.",
+      "Comprehensive commercial vehicle Insurance offers complete protection for your vehicle.",
       "It covers all risks, such as accidents, theft, fire, natural calamities, personal accidents, and protection from third-party liabilities. You can customise the plan further with add-ons for a more personalised experience.",
     ],
   },
