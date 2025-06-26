@@ -43,15 +43,15 @@ export default function Page() {
               at the core.
             </p>
             <p>
-              We realised the true value of insurance lies in the support that
-              follows. For us, commercial insurance is about providing the right
+              We realised the true value of Insurance lies in the support that
+              follows. For us, commercial Insurance is about providing the right
               information so you can make informed decisions and choose coverage
               that fits your business. In the logistics and transport sector,
-              commercial vehicle insurance comes with its own set of
+              commercial vehicle Insurance comes with its own set of
               challenges—complex claims, unclear documentation, and unexpected
               costs. This led to the founding of Suntec Insurance Broking Pvt.
               Ltd. in 2025, to simplify, accelerate, and a more customer-centric
-              approach to commercial logistics insurance.
+              approach to commercial logistics Insurance.
             </p>
             <p>
               Through faster claim settlements and responsive support, we help
@@ -71,7 +71,7 @@ export default function Page() {
           </p>
           <p>
             Disclaimer : Suntec Insurance Broking Private Limited does not
-            endorse, rate or recommend any particular insurer or any insurance
+            endorse, rate or recommend any particular insurer or any Insurance
             product offered by any insurer.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function Page() {
             </div>
             <div className="margin-bottom"></div>
             <p>
-              Navigating commercial vehicle insurance - especially in the
+              Navigating commercial vehicle Insurance - especially in the
               logistics sector - isn't as simple as choosing a policy and moving
               on. Insuring trucks, buses, or goods carriers involves layers of
               legal processes, assessments, and heavy documentation. And when an
@@ -120,7 +120,7 @@ export default function Page() {
             </div>
             <div className="divider"></div>
             <p>
-              To build an insurance experience where customers feel heard,
+              To build an Insurance experience where customers feel heard,
               supported, and protected - not just at the time of buying but in
               times when it matters most.
             </p>
@@ -128,7 +128,7 @@ export default function Page() {
               We're not just here to create demand. We're here to build trust.
             </p>
             <p>
-              That means bringing awareness and transparency about insurance and
+              That means bringing awareness and transparency about Insurance and
               its role in both personal and business life across the country.
             </p>
           </div>

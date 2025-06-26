@@ -1,7 +1,7 @@
 import React from "react";
 const documentsData = {
   column1Title:
-    "The following documents will be required to file a claim for commercial vehicle Insurance",
+    "The following documents will be required to file a claim for commercial vehicle Insurance.",
   column1Items: [
     {
       text: "Commercial Vehicle Insurance Policy Certificate",

@@ -9,13 +9,13 @@ export default function GoodsCarringVichle() {
           <div className="white">Insurance</div>
         </div>
         <p>
-          Commercial Vehicle Insurance is a motor insurance that protects
+          Commercial Vehicle Insurance is a motor Insurance that protects
           vehicles from financial risk – an external damage such as natural
           disasters, accidents, thefts, fire and third-party liabilities.
         </p>
         <p>
           The Motor Vehicles Act of 1988, requires all vehicles including
-          goods-carrying vehicles to have Third-Party (TP) damage insurance
+          goods-carrying vehicles to have Third-Party (TP) damage Insurance
           coverage because their large size and heavy loads make them vulnerable
           to various hazards during transportation.
         </p>

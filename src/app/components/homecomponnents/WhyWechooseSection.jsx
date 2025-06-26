@@ -16,7 +16,7 @@ export default function WhyWechooseSection() {
             them when it matters.
           </p>
           <p>
-            We simplify the insurance process, helping you make sense of it,
+            We simplify the Insurance process, helping you make sense of it,
             manage it, and, most importantly, claim it without chaos. Insurance
             isn’t just about the sale but about processing claims when needed.
           </p>

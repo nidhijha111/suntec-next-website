@@ -151,7 +151,7 @@ export default function Footer() {
           <div>
             <span className="small-dot">&bull;</span> Disclaimer : Suntec Insurance
             Broking Private Limited does not endorse, rate or recommend any
-            particular insurer or any insurance product offered by any insurer.
+            particular insurer or any Insurance product offered by any insurer.
           </div>
         </div>
         <div className="footer_info_text_wrapper">

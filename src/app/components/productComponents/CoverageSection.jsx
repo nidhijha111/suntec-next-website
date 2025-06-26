@@ -63,7 +63,7 @@ const CoverageTypesSection = () => {
         ))}
       </div>
       <p className="disclaimer-note">
-        Please note : For the detailed information on these three types of
+        Please note : For detailed information on these three types of
         coverages, please read the policy document available on the respective
         insurers website.
       </p>

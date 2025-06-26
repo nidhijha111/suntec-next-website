@@ -58,7 +58,7 @@ export default function SupportForm() {
             setProductType("");
           }}
         >
-          <option value={""}>Select query</option>
+          <option value={""}>Select Query</option>
           <option value={"Product query"}> Product query</option>
           <option value={"Renewals"}>Renewals</option>
           <option value={"Claims"}>Claims</option>
