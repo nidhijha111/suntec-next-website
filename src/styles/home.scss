@@ -176,7 +176,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 120px;
-    column-gap: 60px;
+    column-gap: 90px;
     width: 100%;
     margin-top: 90px;
 
@@ -213,13 +213,13 @@ h1 {
         }
       }
     }
-
     @media (max-width: 968px) {
+      column-gap: 60px;
       .our_work_card_wrapper {
         .our_work_card {
           padding: 0px 30px 30px 30px;
           font-size: 20px;
-           min-height: 200px;
+          min-height: 200px;
           .our_wor_icon_wrapper {
             width: 100px;
             height: 100px;
@@ -316,6 +316,7 @@ h1 {
     .text_wrapper {
       margin-bottom: 20px;
       padding: 0px 20px;
+      line-height: 1.6;
     }
     .extra-padding {
       padding: 0px 50px;

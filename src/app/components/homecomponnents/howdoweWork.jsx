@@ -116,11 +116,11 @@ export default function HowdoweWork() {
         </div>
         <div className="work_info_wrapper">
           <div className="main_heading_text yellow"> Our Presence</div>
-          <div>
+          <div className="heading_para">
             Suntec Insurance is strategically positioned to support businesses
             where it matters most.
           </div>
-          <div>
+          <div className="heading_para">
             Our presence in Delhi NCR, Maharashtra, and Madhya Pradesh enables
             us to deliver Insurance services that transform business operations
             through service excellence, speed, and accountability.
