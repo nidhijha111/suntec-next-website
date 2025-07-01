@@ -61,22 +61,22 @@ const productsMenuData = [
   {
     id: "other-categories",
     label: "Other Categories",
-    link: "/product",
+    link: "",
     children: [
       {
         id: "home-insurance",
         label: "Home Insurance",
-        link: "/product",
+        link: "/home-insurance",
       },
       {
         id: "business-insurance",
         label: "Business Insurance",
-        link: "/product",
+        link: "/bussiness-insurance",
       },
       {
         id: "travel-insurance",
         label: "Travel Insurance",
-        link: "/product",
+        link: "/travel-insurance",
       },
       {
         id: "health-insurance",

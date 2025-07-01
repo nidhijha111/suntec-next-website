@@ -8,6 +8,7 @@ import "../styles/renew.scss";
 import "../styles/producs.scss";
 import "../styles/claims.scss";
 import "../styles/support.scss";
+import '../styles/insurance.scss';
 import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
