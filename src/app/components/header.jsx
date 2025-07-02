@@ -53,9 +53,9 @@ const productsMenuData = [
     ],
   },
   {
-    id: "life-insurance",
-    label: "Life Insurance",
-    link: "/product",
+    id: "term-insurance",
+    label: "Term Insurance",
+    link: "/term-insurance",
     children: [],
   },
   {
