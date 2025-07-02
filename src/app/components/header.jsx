@@ -86,22 +86,22 @@ const productsMenuData = [
       {
         id: "personal-accident-insurance",
         label: "Personal Accident Insurance",
-        link: "/product",
+        link: "/personal-accident-insurance",
       },
       {
         id: "public-liability-insurance ",
         label: "Public Liability Insurance ",
-        link: "/product",
+        link: "/public-liability-insurance",
       },
       {
         id: "fidelity-guarantee-insurance",
         label: "Fidelity Guarantee Insurance",
-        link: "/product",
+        link: "/fidelity-guarantee-insurance",
       },
       {
         id: "cyber-crime-insurance",
         label: "Cyber Insurance",
-        link: "/product",
+        link: "/cyber-insurance",
       },
     ],
   },

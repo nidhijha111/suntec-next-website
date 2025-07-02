@@ -7,8 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid $color-brand-blue;
-  margin-bottom: 60px;
+  border-bottom: 5px solid $color-brand-blue;s
 
   .line_wrapper {
     height: 3px;
@@ -206,7 +205,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: $color-pure-white;
-  margin-bottom: 60px;
+  margin: 60px 0px;
 
   .info-text {
     width: 100%;
@@ -238,7 +237,7 @@
   }
 
   @media (max-width: 962px) {
-    margin-bottom: 40px;
+    margin: 40px 0px;
     grid-template-columns: 1fr;
     .info-text {
       padding: 20px;
