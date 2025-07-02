@@ -61,8 +61,9 @@ const travelDocumentsData = {
 };
 export default function InsuranceTypeSection({ type }) {
   return (
-    <div>
+    <div className="other-insurence-section">
       <InsurenceForm type={type} />
+      <div className="large-margin"></div>
       <div className="insurance-info-text-image-wrapper">
         <div className="info-image">
           <img
@@ -98,6 +99,7 @@ export default function InsuranceTypeSection({ type }) {
           </p>
         </div>
       </div>
+      <div className="large-margin"></div>
       <DocumentInfoSection
         documentsData={homeDocumentsData}
         headingTextFirst={"Types of home"}
@@ -107,6 +109,7 @@ export default function InsuranceTypeSection({ type }) {
           to understand the policy coverage, please read the policy documents
           carefully."
       />
+      <div className="large-margin"></div>
       <div className="insurance-info-text-image-wrapper">
         <div className="info-image">
           <img
@@ -134,6 +137,7 @@ export default function InsuranceTypeSection({ type }) {
           </p>
         </div>
       </div>
+      <div className="large-margin"></div>
       <DocumentInfoSection
         documentsData={bussinessdocumentsData}
         headingTextFirst={"Different types of Insurance"}
@@ -142,6 +146,7 @@ export default function InsuranceTypeSection({ type }) {
           "For the detailed information about the products, please read the product information on the respective Insurer's website and to understand the policy coverage, please read the policy documents carefully."
         }
       />
+      <div className="large-margin"></div>
       <div className="insurance-info-text-image-wrapper">
         <div className="info-image">
           <img
@@ -172,6 +177,7 @@ export default function InsuranceTypeSection({ type }) {
           </p>
         </div>
       </div>
+      <div className="large-margin"></div>
       <DocumentInfoSection
         documentsData={travelDocumentsData}
         headingTextFirst={"Types of travel "}

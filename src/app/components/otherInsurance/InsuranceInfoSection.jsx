@@ -1,0 +1,37 @@
+"use client";
+import React from "react";
+
+export default function InsuranceInfoSection({
+  imageSrc,
+  title,
+  subtitle,
+  paragraphs,
+  alt,
+  desclaimer,
+}) {
+  console.log(imageSrc);
+  return (
+    <div>
+      <div className="insurance-info-text-image-wrapper">
+        <div className="info-image">
+          <img
+            className="responsive-img"
+            src={imageSrc ?? ""}
+            alt={alt || title}
+          />
+        </div>
+        <div className="info-text">
+          <div className="main_heading_text">
+            <div className="white">{title}</div>
+          </div>
+          <div className="sub-heading-text">{subtitle}</div>
+          {paragraphs?.length > 0 &&
+            paragraphs.map((para, i) => <p key={i}>{para}</p>)}
+        </div>
+      </div>
+      {desclaimer && (
+        <p className="disclaimer-note">Disclaimer : {desclaimer}</p>
+      )}
+    </div>
+  );
+}

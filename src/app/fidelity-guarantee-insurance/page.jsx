@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import PublicfidelityCyberSection from "../components/publicfidelityCyberComponents/publicfidelityCyberSection";
 
 export default function page() {
   return (
-    <div>page</div>
-  )
+    <div className="container">
+      <PublicfidelityCyberSection type={"Fidelity Guarantee Insurance"} />
+    </div>
+  );
 }
