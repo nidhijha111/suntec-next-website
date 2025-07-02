@@ -67,7 +67,7 @@ export default function InsuranceTypeSection({ type }) {
         <div className="info-image">
           <img
             className="responsive-img"
-            src={"./assets/images/Home Insurance.jpg"}
+            src={"./assets/images/Home-Insurance.jpg"}
             alt="bussiness-insurence-image"
           />
         </div>
@@ -111,7 +111,7 @@ export default function InsuranceTypeSection({ type }) {
         <div className="info-image">
           <img
             className="responsive-img"
-            src={"./assets/images/Business Insurance.jpg"}
+            src={"./assets/images/Business-Insurance.jpg"}
             alt="bussiness-insurence-image"
           />
         </div>
@@ -146,7 +146,7 @@ export default function InsuranceTypeSection({ type }) {
         <div className="info-image">
           <img
             className="responsive-img"
-            src={"./assets/images/Travel Insurance.jpg"}
+            src={"./assets/images/Travel-insurance.jpg"}
             alt="bussiness-insurence-image"
           />
         </div>
