@@ -81,7 +81,7 @@ const productsMenuData = [
       {
         id: "health-insurance",
         label: "Health Insurance",
-        link: "/product",
+        link: "/health-insurance",
       },
       {
         id: "personal-accident-insurance",

@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import HealthPersonalInsurenceSection from "../components/healthPersonalInscComponents/healthPersonalInsurenceSection";
 
 export default function page() {
   return (
-    <div>page</div>
-  )
+    <div>
+      <HealthPersonalInsurenceSection type={"Health Insurance"} />
+    </div>
+  );
 }

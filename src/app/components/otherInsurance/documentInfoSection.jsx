@@ -53,9 +53,9 @@ export default function DocumentInfoSection({documentsData,headingTextFirst,head
             </div>
           </div>
         </div>
-        <p className="disclaimer-note">
+        {disclaimerText && <p className="disclaimer-note">
           Disclaimer : {disclaimerText}
-        </p>
+        </p>}
       </div>
     </section>
   );
