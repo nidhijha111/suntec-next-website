@@ -45,7 +45,7 @@ export default function PublicfidelityCyberForm({ type }) {
       <div className="main_heading_text">
         <div className="blue text-center">Buy Or Renew</div>
         <div className="yellow text-center">
-          Public Liability, Fidelity Guarantee Insurance and Cyber Insurance
+          Public Liability, Fidelity Guarantee Insurance <br/> and Cyber Insurance
         </div>
       </div>
       <div className="line_wrapper"></div>

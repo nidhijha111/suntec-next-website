@@ -1,0 +1,41 @@
+import React from "react";
+
+const FeatureTermInsurance = ({ carddata, headingLineOne, headingLineTwo }) => {
+  return (
+    <section className="coverage-types-section">
+      <div className="section-title">
+        <div className="main_heading_text">
+          <div className="blue">{headingLineOne} </div>
+          <div className="yellow">{headingLineTwo}</div>
+        </div>
+      </div>
+      <div className="coverage-cards-container">
+        {carddata?.map((coverage) => (
+          <div
+            key={coverage.id}
+            className={`coverage-card card-variant-${coverage.variant}`}
+          >
+            <div className="card-top">
+              <div className="card-top-heading">
+                {coverage.title.split("\n").map((line, index, arr) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    {index < arr.length - 1 && <br />}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+            <div className="card-content">
+              {coverage.paragraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="large-margin"></div>
+    </section>
+  );
+};
+
+export default FeatureTermInsurance;

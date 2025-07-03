@@ -1,6 +1,7 @@
 import React from "react";
 import InsurenceForm from "./InsurenceForm";
 import DocumentInfoSection from "./documentInfoSection";
+import HowtoBuyTermPolicy from "../termInsuranceComponents/howtoBuyTermPolicy";
 const homeDocumentsData = {
   column1Title: "There are the following types of home Insurance policies. ",
   column1Items: [
@@ -59,6 +60,42 @@ const travelDocumentsData = {
     { text: "Visa compliant schengen travel Insurance ", iconColor: "yellow" },
   ],
 };
+
+const stepsData = [
+  {
+    id: "step1",
+    stepNumber: "Step 1",
+    variant: "blue",
+    description:
+      "Visit suntec’s website www.suntecinsurance.com. Click on the ‘Other categories’ icon on the Home Page or from the Products tab click on Home Insurance or Business Insurance or Travel Insurance.",
+  },
+  {
+    id: "step2",
+    stepNumber: "Step 2",
+    variant: "yellow",
+    description: "Enter your name, mobile number, email.",
+  },
+  {
+    id: "step3",
+    stepNumber: "Step 3",
+    variant: "blue",
+    description:
+      "Our Insurance adviser will guide you in choosing the policy that best suits your needs.",
+  },
+  {
+    id: "step4",
+    stepNumber: "Step 4",
+    variant: "yellow",
+    description: "After choosing the policy, make the premium payment.",
+  },
+  {
+    id: "step5",
+    stepNumber: "Step 5",
+    variant: "blue",
+    description:
+      "Your Insurance policy will be mailed to you after paying the premium.",
+  },
+];
 export default function InsuranceTypeSection({ type }) {
   return (
     <div className="other-insurence-section">
@@ -185,6 +222,12 @@ export default function InsuranceTypeSection({ type }) {
         disclaimerText={
           "For the detailed information about the products, please read the product information on the respective Insurer's website and to understand the policy coverage, please read the policy documents carefully."
         }
+      />
+      <HowtoBuyTermPolicy
+        stepsData={stepsData}
+        headingTextFirst="How to buy home, business"
+        headingTextSecond=" or travel Insurance?"
+        stepimagesrc={"./assets/images/home-bussiness-travel-step.svg"}
       />
     </div>
   );

@@ -1,6 +1,43 @@
 import React from "react";
 import PublicfidelityCyberForm from "./PublicfidelityCyberForm";
 import InsuranceInfoSection from "../otherInsurance/InsuranceInfoSection";
+import HowtoBuyTermPolicy from "../termInsuranceComponents/howtoBuyTermPolicy";
+
+const stepsData = [
+  {
+    id: "step1",
+    stepNumber: "Step 1",
+    variant: "blue",
+    description:
+      "Visit suntec’s website www.suntecinsurance.com. Click on the ‘Other Categories’ icon on the Home Page or from the Products tab Public Liability or Fidelity Guarantee Insurance’ or Cyber Insurance.",
+  },
+  {
+    id: "step2",
+    stepNumber: "Step 2",
+    variant: "yellow",
+    description: "Enter your name, mobile number and email.",
+  },
+  {
+    id: "step3",
+    stepNumber: "Step 3",
+    variant: "blue",
+    description:
+      "Our Insurance advisor will provide all the necessary information to help you choose the policy that best suits your needs.",
+  },
+  {
+    id: "step4",
+    stepNumber: "Step 4",
+    variant: "yellow",
+    description: "After choosing the policy, make the premium payment.",
+  },
+  {
+    id: "step5",
+    stepNumber: "Step 5",
+    variant: "blue",
+    description:
+      "Your Insurance policy will be mailed to you after paying the premium.",
+  },
+];
 
 export default function PublicfidelityCyberSection({ type }) {
   return (
@@ -45,6 +82,12 @@ export default function PublicfidelityCyberSection({ type }) {
         ]}
         desclaimer="For the detailed information about the products, please read the product information on the respective Insurer's website and to understand the policy coverage, please read the policy documents carefully.
 "
+      />
+      <HowtoBuyTermPolicy
+        stepsData={stepsData}
+        headingTextFirst="How to buy public liability/fidelity "
+        headingTextSecond="guarantee/cyber Insurance?"
+        stepimagesrc={"./assets/images/liability-fidelity-step-image.svg"}
       />
       {/* <div className="large-margin"></div> */}
     </div>

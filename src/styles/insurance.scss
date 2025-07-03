@@ -268,3 +268,98 @@
     }
   }
 }
+
+
+
+.term-insurance-plan-section {
+  padding: 0px;
+
+  .section-title {
+    text-align: center;
+  }
+
+  .heading-line {
+    width: 60px;
+    height: 3px;
+    background-color: $color-brand-yellow;
+    margin: 30px auto 23px auto;
+  }
+
+  .section-subtitle {
+    text-align: center;
+  }
+
+  .factors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 60px;
+   justify-self: center;
+
+    @media (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+       justify-self: center;
+    }
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+       justify-self: center;
+    }
+  }
+
+  .factor-card {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .factor-card-header {
+      padding: 15px 20px;
+      border-radius: 10px;
+      text-align: center;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .fector_title {
+        font-size: 25px;
+        font-weight: 400;
+      }
+
+      &.card-header-blue {
+        background-color: $color-brand-blue;
+        color: $color-whitish;
+        margin-bottom: 20px;
+      }
+      &.card-header-yellow {
+        background-color: $color-brand-yellow;
+        color: $color-whitish;
+        margin-bottom: 20px;
+      }
+    }
+
+    .factor-card-body {
+      padding: 10px 22px 25px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 10px;
+      flex-grow: 1;
+      text-align: center;
+
+      p {
+        font-size: 15px;
+        color: $font-color;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      &.card-body-blue {
+        border-color: $color-brand-blue;
+      }
+      &.card-body-yellow {
+        border-color: $color-brand-yellow;
+      }
+    }
+  }
+
+}

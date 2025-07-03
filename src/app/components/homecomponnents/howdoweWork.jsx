@@ -112,7 +112,7 @@ export default function HowdoweWork() {
       </div>
       <div className="our_location_warapper_section">
         <div className="map_image_wrapper">
-          <img src="./assets/images/map_image.png" alt="map_image" />
+          <img src="./assets/images/map_image.svg" alt="map_image" />
         </div>
         <div className="work_info_wrapper">
           <div className="main_heading_text yellow"> Our Presence</div>
