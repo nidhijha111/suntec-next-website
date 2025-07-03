@@ -45,7 +45,7 @@ export default function Footer() {
             className="footer_head_link"
             onClick={() => router.push("/product")}
           >
-            Life Insurance
+            Term Insurance
           </div>
         </div>
         <div className="footer_link_wrapper">

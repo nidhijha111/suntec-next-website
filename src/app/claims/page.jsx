@@ -94,7 +94,7 @@ export default function Claims() {
                 <option>Public Liability Insurance</option>
                 <option> Fidelity Guarantee Insurance</option>
                 <option>Cyber Insurance</option>
-                <option> Life Insurance</option>
+                <option> Term Insurance</option>
               </select>
             )}
             <input

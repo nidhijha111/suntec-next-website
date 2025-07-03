@@ -56,8 +56,8 @@ export const categoriesData = [
   {
     id: 10,
     path: "./assets/images/life_insurence_icon.svg",
-    text: <>Life <br/> Insurance</>,
-    altText: "Life Insurance",
+    text: <>Term <br/> Insurance</>,
+    altText: "Term Insurance",
   },
   {
     id: 11,
