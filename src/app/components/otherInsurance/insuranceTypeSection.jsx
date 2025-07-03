@@ -148,13 +148,6 @@ export default function InsuranceTypeSection({ type }) {
       />
       <div className="large-margin"></div>
       <div className="insurance-info-text-image-wrapper">
-        <div className="info-image">
-          <img
-            className="responsive-img"
-            src={"./assets/images/Business-Insurance.jpg"}
-            alt="bussiness-insurence-image"
-          />
-        </div>
         <div className="info-text">
           <div className="main_heading_text">
             <div className="white">Business Insurance</div>
@@ -173,6 +166,13 @@ export default function InsuranceTypeSection({ type }) {
             stability, facilitates growth, and manages risks.
           </p>
         </div>
+        <div className="info-image">
+          <img
+            className="responsive-img"
+            src={"./assets/images/Business-Insurance.jpg"}
+            alt="bussiness-insurence-image"
+          />
+        </div>
       </div>
       <div className="large-margin"></div>
       <DocumentInfoSection
@@ -185,7 +185,7 @@ export default function InsuranceTypeSection({ type }) {
       />
       <div className="large-margin"></div>
       <div className="insurance-info-text-image-wrapper">
-        <div className="info-image">
+         <div className="info-image">
           <img
             className="responsive-img"
             src={"./assets/images/Travel-insurance.jpg"}
@@ -213,6 +213,7 @@ export default function InsuranceTypeSection({ type }) {
             your journey without financial concerns.
           </p>
         </div>
+       
       </div>
       <div className="large-margin"></div>
       <DocumentInfoSection

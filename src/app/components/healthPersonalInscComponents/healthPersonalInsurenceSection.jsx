@@ -102,6 +102,7 @@ export default function HealthPersonalInsurenceSection({ type }) {
         </p>
         <div className="large-margin"></div>
         <InsuranceInfoSection
+        reverse={true}
           imageSrc="./assets/images/Personal-Accident-Insurance.jpg"
           alt={"Personal Accident Insurance image"}
           title={"Personal Accident Insurance"}

@@ -58,6 +58,7 @@ export default function PublicfidelityCyberSection({ type }) {
       />
       <div className="large-margin"></div>
       <InsuranceInfoSection
+        reverse={true}
         imageSrc="./assets/images/Fidelity-Insurance.jpg"
         alt={"Fidelity Guarantee Insurance image"}
         title={"Fidelity Guarantee Insurance"}

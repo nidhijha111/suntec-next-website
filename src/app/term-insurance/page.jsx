@@ -165,15 +165,16 @@ export default function page() {
         <TermInsuranceHero />
         <div className="large-margin"></div>
         <InsuranceInfoSection
-          imageSrc="./assets/images/life-insurance-concept-with-stethoscope.jpg"
-          alt={"Term Insurances"}
-          title={"Term Insurances"}
+          imageSrc="./assets/images/product_hero_image.png"
+          alt={"Term Insurance"}
+          title={"Term Insurance"}
           subtitle={"What is term Insurance?"}
           paragraphs={[
             "Term Insurance is a simple and economical life Insurance option that offers financial security for a specific duration, referred to as the policy term, guaranteeing that your beneficiaries will receive a lump-sum payment if you die during this period. ",
             "Unlike conventional life Insurance policies that merge coverage with savings or investment features, term Insurance does not accumulate cash value over time. Instead, it focuses solely on providing a death benefit to the beneficiaries.",
             "It is a budget-friendly option for those seeking substantial coverage at lower costs. It is especially advantageous for young professionals, parents, or homeowners aiming to secure their family’s future or address significant obligations like mortgages. Specific policies may also include a return of premium feature, which refunds all the premiums paid if you survive the term, although this option typically incurs a slightly higher cost. With its straightforwardness, affordability, and emphasis on pure protection, term Insurance guarantees your family’s financial well-being in your absence, making it a sensible and responsible choice for lasting security.",
           ]}
+          reverse={true}
         />
         <FeatureTermInsurance
           carddata={featureBenifitData}
@@ -183,14 +184,14 @@ export default function page() {
         <TermInsurancePlan />
         <FeatureTermInsurance
           carddata={termInsurencePlicyData}
-          headingLineOne={"Who should buy a term"}
-          headingLineTwo={"Insurance policy?"}
+          headingLineOne={"Who should buy a "}
+          headingLineTwo={"term Insurance policy?"}
         />
         <WhenShouldBuyInsurence />
         <HowtoBuyTermPolicy
           stepsData={stepsData}
-          headingTextFirst="How to buy term"
-          headingTextSecond="Insurance?"
+          headingTextFirst="How to buy "
+          headingTextSecond="term Insurance?"
           stepimagesrc={"./assets/images/term-step-image.svg"}
         />
       </div>

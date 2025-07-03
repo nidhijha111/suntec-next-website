@@ -1,8 +1,8 @@
 @use "./variables" as *;
-.two-type-categories{
- .insurance-types {
-   grid-template-columns: 1fr 1fr !important;
- }
+.two-type-categories {
+  .insurance-types {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 .other-insurence-section {
   .insurance_type_section {
@@ -246,6 +246,8 @@
       }
     }
   }
+
+
   .disclaimer-note {
     text-align: center;
     margin-top: 20px;
@@ -254,22 +256,20 @@
     font-size: 13px;
   }
   .how_we_work_section {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
   }
-  .large-margin{
+  .large-margin {
     margin-bottom: 60px;
-    @media(max-width:962px){
+    @media (max-width: 962px) {
       margin-bottom: 40px;
     }
   }
 }
-
-
 
 .term-insurance-plan-section {
   padding: 0px;
@@ -294,15 +294,15 @@
     grid-template-columns: 1fr;
     gap: 25px;
     margin-top: 60px;
-   justify-self: center;
+    justify-self: center;
 
     @media (min-width: 600px) {
       grid-template-columns: repeat(2, 1fr);
-       justify-self: center;
+      justify-self: center;
     }
     @media (min-width: 992px) {
       grid-template-columns: repeat(4, 1fr);
-       justify-self: center;
+      justify-self: center;
     }
   }
 
@@ -361,5 +361,4 @@
       }
     }
   }
-
 }
