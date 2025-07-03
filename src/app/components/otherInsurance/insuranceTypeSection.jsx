@@ -204,7 +204,7 @@ export default function InsuranceTypeSection({ type }) {
             passport loss, and other travel-related risks. Whether you travel
             for leisure, business, or education, travel Insurance provides peace
             of mind by covering hospitalisation, flight delays, theft, and more.
-            Numerous countries even mandate valid travel insurance to obtain a
+            Numerous countries even mandate valid travel Insurance to obtain a
             visa.
           </p>
           <p>

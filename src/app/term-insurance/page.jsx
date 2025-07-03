@@ -20,7 +20,7 @@ const featureBenifitData = [
     title: "Tailored premium payment options",
     variant: "yellow",
     paragraphs: [
-      "You can select a payment plan that fits your needs, whether yearly, half-yearly, quarterly, or monthly. This flexibility helps you align your insurance payments with your financial situation, making maintaining organisation and peace of mind simpler.",
+      "You can select a payment plan that fits your needs, whether yearly, half-yearly, quarterly, or monthly. This flexibility helps you align your Insurance payments with your financial situation, making maintaining organisation and peace of mind simpler.",
     ],
   },
   {
@@ -86,7 +86,7 @@ const termInsurencePlicyData = [
     title: "Term Insurance\n for women",
     variant: "yellow",
     paragraphs: [
-      "Term Insurance for women play an essential role as financial contributors today, and term insurance provides crucial protection for their families. It ensures the future of your loved ones, helps manage debts, and, with the option of critical illness riders, offers assistance in the event of serious health issues such as breast or cervical cancer.",
+      "Term Insurance for women play an essential role as financial contributors today, and term Insurance provides crucial protection for their families. It ensures the future of your loved ones, helps manage debts, and, with the option of critical illness riders, offers assistance in the event of serious health issues such as breast or cervical cancer.",
     ],
   },
   {

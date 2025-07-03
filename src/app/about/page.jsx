@@ -102,7 +102,7 @@ export default function Page() {
           <div className="image-container">
             <img
               src={"./assets/images/about_why_we_do_image.png"}
-              alt="Smartphone showing a 'Service' screen for insurance"
+              alt="Smartphone showing a 'Service' screen for Insurance"
             />
           </div>
         </section>
