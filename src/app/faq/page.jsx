@@ -29,7 +29,7 @@ const faqData = [
   {
     id: 5,
     question: "5. Can I buy multiple Insurance policies through your platform?",
-    answer: "5. Can I buy multiple Insurance policies through your platform?",
+    answer: "Yes, you can connect with our team and buy multiple policies through us.",
   },
   {
     id: 6,

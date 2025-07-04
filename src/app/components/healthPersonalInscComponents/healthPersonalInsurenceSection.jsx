@@ -70,15 +70,13 @@ export default function HealthPersonalInsurenceSection({ type }) {
           subtitle={"What is health Insurance?"}
           paragraphs={[
             "Health Insurance is a type of general Insurance that protects you financially during medical emergencies caused by illness, disease, or accidents.It includes coverage for expenses like hospitalisation, surgeries, pre- and post-treatment care, maternity services, critical illnesses, mental health, and annual health assessments, based on your policy.",
-            "This Insurance policy protects the insured by covering legal fees and compensation they are legally obliged to pay if they are deemed responsible for injuries or damages a third party suffers. Whether you run a business, hospital, or clinic, public liability Insurance helps protect you financially from unexpected liabilities.",
-            "It covers claims formally made in writing against the insured during the policy period, including legal expenses incurred with the insurer’s prior consent—subject to the policy’s indemnity limits, terms, conditions, and exclusions.",
+            "By paying a regular premium, you secure coverage for a wide range of treatments and procedures. Health Insurance not only safeguards your health but also your savings, making it a smart investment for long-term financial security.",
           ]}
         />
         <div className="large-margin"></div>
         <DocumentInfoSection
           documentsData={DocumentsData}
-          headingTextFirst={"Health Insurance"}
-          headingTextSecond={"plans"}
+          headingTextFirst={"Health Insurance plans"}
         />
         <div className="large-margin"></div>
         <section className="how_we_work_section">

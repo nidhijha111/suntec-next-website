@@ -219,7 +219,7 @@ export default function InsuranceTypeSection({ type }) {
       <DocumentInfoSection
         documentsData={travelDocumentsData}
         headingTextFirst={"Types of travel "}
-        headingTextSecond={"Insurance plans"}
+        headingTextSecond={"Insurance plans?"}
         disclaimerText={
           "For the detailed information about the products, please read the product information on the respective Insurer's website and to understand the policy coverage, please read the policy documents carefully."
         }

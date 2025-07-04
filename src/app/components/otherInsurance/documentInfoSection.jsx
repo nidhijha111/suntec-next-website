@@ -6,8 +6,8 @@ export default function DocumentInfoSection({documentsData,headingTextFirst,head
     <section className="documents-needed-section">
       <div className="container">
         <div className="section-title main_heading_text">
-          {headingTextFirst && <div className="yellow">{headingTextFirst} </div>}
-          {headingTextSecond && <div className="blue"> {headingTextSecond}</div>}
+          {headingTextFirst && <div className="blue">{headingTextFirst} </div>}
+          {headingTextSecond && <div className="yellow"> {headingTextSecond}</div>}
         </div>
         <div className="documents-content-wrapper">
           <div className="documents-header">

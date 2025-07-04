@@ -9,7 +9,7 @@ import HowtoBuyTermPolicy from "../components/termInsuranceComponents/howtoBuyTe
 const featureBenifitData = [
   {
     id: "third-party",
-    title: "Safeguarding your family's financial well-bein",
+    title: "Safeguarding your family's financial well-being",
     variant: "blue",
     paragraphs: [
       "In case of an unexpected loss, term Insurance delivers a one-time payout that assists your family in sustaining financial security. This sum can be utilized to cover daily costs, settle existing debts, or aid future aspirations—providing a reliable safety net during difficult periods.",
@@ -20,7 +20,7 @@ const featureBenifitData = [
     title: "Tailored premium payment options",
     variant: "yellow",
     paragraphs: [
-      "You can select a payment plan that fits your needs, whether yearly, half-yearly, quarterly, or monthly. This flexibility helps you align your Insurance payments with your financial situation, making maintaining organisation and peace of mind simpler.",
+      "You can select a payment plan that fits your needs, whether yearly, half-yearly, quarterly, or monthly. This flexibility helps you align your Insurance payments with your financial situation, making it easier to stay organised and peace of mind simpler.",
     ],
   },
   {
@@ -129,7 +129,7 @@ const stepsData = [
     stepNumber: "Step 1",
     variant: "blue",
     description:
-      "Visit suntec’s website www.suntecinsurance.com. Click on the ‘Other Categories’ icon on the Home Page or from the Products tab ‘Life Insurance’",
+      "Visit suntec’s website www.suntecinsurance.com. Click on the ‘Other Categories’ icon on the Home Page or from the Products tab ‘Term Insurance’",
   },
   {
     id: "step2",

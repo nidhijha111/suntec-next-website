@@ -95,7 +95,7 @@ export default function CommonheroSection({headerTextfirst,headerTextSecond,head
             <div className="main_heading_text">
               <div className="blue">{headerTextfirst}</div>
               <div className="yellow">{headerTextSecond}</div>
-              <div className="blue">{headerTextThird}</div>
+              {headerTextThird && <div className="blue">{headerTextThird}</div>}
             </div>
           </div>
 

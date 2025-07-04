@@ -11,7 +11,7 @@ export default function TermInsurancePlan() {
       ),
       variant: "blue", 
       description:
-        "A fundamental term Insurance policy is the simplest form of life coverage. By making regular premium payments at a reasonable rate, you guarantee that if anything were to happen to you within the duration of the policy, your family will obtain a significant financial benefit. It serves as a protective shield, ensuring the financial security of your loved ones in your absence.",
+        "A basic term insurance policy is the simplest form of life cover. With regular, affordable premiums, it ensures your family receives financial support if something happens to you during the policy term—offering a protective shield for their future.",
     },
     {
       id: "support",
@@ -22,19 +22,18 @@ export default function TermInsurancePlan() {
       ),
       variant: "yellow",
       description:
-        "This plan provides life coverage for the entire policy while guaranteeing your investment is not lost. You make consistent premium payments to safeguard your family, and if you survive the policy term, you will receive all the premiums you have paid back. It’s beneficial for both—you gain reassurance from knowing your family is protected, and you recoup your money if there’s no claim.",
+        "This plan offers life coverage while ensuring your investment is safe. You pay regular premiums to protect your family, and if you outlive the policy term, all premiums paid are returned—providing both peace of mind and value.",
     },
     {
       id: "addons",
       title: (
         <>
-          Limited payment <br /> term life Insurance
-          <br /> plan
+          Limited payment term <br/> life Insurance plan 
         </>
       ),
       variant: "blue",
       description:
-        "This option is perfect for individuals who want to avoid long-term payment commitments; it allows you to pay premiums for a brief duration while maintaining your life coverage for an extended period. It resembles paying upfront for a subscription and reaping the benefits long after the payments have ceased.",
+        "This option is ideal for those who prefer to avoid long-term payments—offering the benefit of paying premiums for a short period while enjoying life coverage for many years. It's like paying upfront for a subscription and enjoying its benefits long after.",
     },
     {
       id: "csr",
@@ -46,7 +45,7 @@ export default function TermInsurancePlan() {
       ),
       variant: "yellow",
       description:
-        "A rising term Insurance plan provides a level of protection that increases over the years, matching your expanding financial obligations. As your circumstances change and costs rise, this plan guarantees that your coverage keeps up. You start with a set coverage amount, which progressively grows each year—assisting you in staying ahead of inflation and future requirements.",
+        "A rising term insurance plan offers coverage that increases over time, keeping pace with your growing financial responsibilities. Starting with a fixed sum assured, the coverage grows annually—helping you stay ahead of inflation and future needs.",
     },
     {
       id: "level-term",
@@ -59,7 +58,7 @@ export default function TermInsurancePlan() {
       ),
       variant: "blue",
       description:
-        "In a level term Insurance plan, the premium and the sum assured remain constant over the entire duration of the policy. This implies you will pay a consistent monthly or annual amount while the life coverage stays the same. Depending on your requirements, it provides reliable and predictable protection for a specified period, usually between 10 to 30 years.",
+        "In a level term insurance plan, both the premium and sum assured stay constant throughout the policy term. It offers predictable, reliable coverage—typically for 10 to 30 years—ensuring consistent protection with fixed payments.",
     },
     {
       id: "decreasing-term",
@@ -71,7 +70,7 @@ export default function TermInsurancePlan() {
       ),
       variant: "yellow",
       description:
-        "This Insurance is designed for individuals whose financial obligations lessen over time. This policy has a provision that allows the benefit amount to be reduced monthly or annually. Typically, the amount of coverage also diminishes over time until the coverage term concludes or until the policy is paid out.",
+        "This insurance is ideal for those with decreasing financial responsibilities, as the coverage amount reduces monthly or annually—gradually declining until the term ends or a claim is made.",
     },
     {
       id: "join-life",
@@ -95,7 +94,7 @@ export default function TermInsurancePlan() {
       ),
       variant: "yellow",
       description:
-        "This policy begins as standard term Insurance but allows you to change it into a permanent life Insurance plan later—without requiring any medical examinations. It’s a wise option if you seek cost-effective coverage but might desire extended protection later. There is no charge for the conversion, although premiums will increase following the change.",
+        "This policy starts as a standard term plan but lets you convert to permanent life insurance later without medical exams. It's a smart, cost-effective choice with flexibility for long-term protection, though premiums will rise after conversion.",
     },
     {
       id: "Group-term",
@@ -125,8 +124,7 @@ export default function TermInsurancePlan() {
   return (
     <section className="term-insurance-plan-section">
       <div className="section-title main_heading_text">
-        <div className="yellow">Types of term Insurance </div>
-        <div className="blue"> plans in India</div>
+        <div className="yellow">Types of term Insurance plans in India </div>
       </div>
       <div className="heading-line"></div>
       <div className="factors-grid">
