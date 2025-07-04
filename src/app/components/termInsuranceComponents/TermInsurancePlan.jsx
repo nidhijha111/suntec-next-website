@@ -9,7 +9,7 @@ export default function TermInsurancePlan() {
           Basic term <br /> Insurance plan
         </>
       ),
-      variant: "blue", // 'blue' or 'yellow' for the header
+      variant: "blue", 
       description:
         "A fundamental term Insurance policy is the simplest form of life coverage. By making regular premium payments at a reasonable rate, you guarantee that if anything were to happen to you within the duration of the policy, your family will obtain a significant financial benefit. It serves as a protective shield, ensuring the financial security of your loved ones in your absence.",
     },

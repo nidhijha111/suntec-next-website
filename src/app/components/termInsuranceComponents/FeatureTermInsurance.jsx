@@ -1,6 +1,14 @@
 import React from "react";
 
-const FeatureTermInsurance = ({ carddata, headingLineOne, headingLineTwo }) => {
+const FeatureTermInsurance = ({
+  carddata,
+  headingLineOne,
+  headingLineTwo,
+  paratext,
+  paraheadingText,
+  descsecondPara,
+  descmainText
+}) => {
   return (
     <section className="coverage-types-section">
       <div className="section-title">
@@ -33,6 +41,8 @@ const FeatureTermInsurance = ({ carddata, headingLineOne, headingLineTwo }) => {
           </div>
         ))}
       </div>
+      {paratext && <p className="disclaimer-note">{paraheadingText} : {paratext}</p>}
+      {descsecondPara && <p className="disclaimer-note">{descmainText} : {descsecondPara}</p>}
       <div className="large-margin"></div>
     </section>
   );

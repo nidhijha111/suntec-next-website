@@ -269,6 +269,12 @@
       margin-bottom: 40px;
     }
   }
+    .remove-margin {
+    margin-bottom: -60px;
+    @media (max-width: 962px) {
+      margin-bottom: -40px;
+    }
+  }
 }
 
 .term-insurance-plan-section {
