@@ -23,10 +23,10 @@ export default function Footer() {
         <div className="footer_link_wrapper">
           <div className="footer_head_link">Motor Insurance</div>
 
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/goods-carrying-vehicle-insurance")}>
             Goods Carrying Vehicle Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/passenger-carrying-vehicle-insurance")}>
             Passenger Carrying Vehicle Insurance
           </div>
           <div className="footer_link" onClick={() => router.push("/product")}>

@@ -8,27 +8,27 @@ const productsMenuData = [
   {
     id: "motor-insurance",
     label: "Motor Insurance",
-    link: "/product",
+    link: "",
     children: [
       {
         id: "goods-carrying",
         label: "Goods-carrying vehicle Insurance",
-        link: "/product",
+        link: "/goods-carrying-vehicle-insurance",
       },
       {
         id: "passenger-carrying",
         label: "Passenger-carrying vehicle Insurance",
-        link: "/product",
+        link: "/passenger-carrying-vehicle-insurances",
       },
       {
         id: "car-insurance",
         label: "Car Insurance",
-        link: "/product",
+        link: "/car-insurance",
       },
       {
         id: "bike-insurance",
         label: "Bike Insurance",
-        link: "/product",
+        link: "/bike-insurance",
       },
       {
         id: "electric-car-insurance",
@@ -43,12 +43,12 @@ const productsMenuData = [
       {
         id: "marine-insurance",
         label: "Marine Insurance",
-        link: "/product",
+        link: "/marine-insurance",
       },
       {
         id: "aviation-insurance",
         label: "Aviation Insurance",
-        link: "/product",
+        link: "/aviation-insurance",
       },
     ],
   },
