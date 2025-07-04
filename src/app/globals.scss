@@ -497,3 +497,14 @@ select {
   background-repeat: no-repeat !important;
   background-position: right 30px center !important;
 }
+
+.footer-bottom-link{
+  text-decoration: none;
+  color: $font-color;
+  margin-left: 5px;
+}
+
+
+.footer-bottom-link:hover{
+ color: $color-brand-blue;
+}

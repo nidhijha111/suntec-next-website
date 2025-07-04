@@ -177,7 +177,7 @@ export default function Footer() {
       </div>
       <p className="copyright footer_info_text_wrapper">
         © Copyright 2025 - 2026 suntecinsurance.com. All Rights Reserved I
-        Sitemap I FAQ’S
+        Sitemap I <a href="/faq" className="footer-link footer-bottom-link">FAQ’S</a>
       </p>
     </footer>
   );

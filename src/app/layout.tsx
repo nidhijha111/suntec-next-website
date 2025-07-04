@@ -9,6 +9,7 @@ import "../styles/producs.scss";
 import "../styles/claims.scss";
 import "../styles/support.scss";
 import '../styles/insurance.scss';
+import '../styles/faq.scss';
 import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
