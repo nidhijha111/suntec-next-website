@@ -256,6 +256,7 @@ export default function MarineAviationSection({type}) {
           "However, operating an aircraft entails considerable risks, including accidents, damage to the plane, and liability to third parties.",
           "Insurance for Airlines is crucial for mitigating these risks and ensuring financial stability. Aviation Insurance is specialised coverage that addresses the distinct dangers of owning and operating an aircraft. It protects against financial setbacks from accidents, mechanical failures, or legal responsibilities.",
         ]}
+        reverse={true}
       />
       <div className="large-margin"></div>
       <WhenShouldBuyInsurence

@@ -14,7 +14,7 @@ export default function CategoriesListing() {
               <div
                 className="category_grid_card"
                 key={index}
-                onClick={() => router.push('/product')}
+                onClick={() => router.push(data?.url)}
               >
                 <div className="grid_card_icon_wrapper">
                   <img src={data?.path} alt={data?.altText} />
