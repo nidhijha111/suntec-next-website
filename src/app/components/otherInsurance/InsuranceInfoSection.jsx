@@ -19,7 +19,7 @@ export default function InsuranceInfoSection({
               <div className="main_heading_text">
                 <div className="white">{title}</div>
               </div>
-              <div className="sub-heading-text">{subtitle}</div>
+              {subtitle && <div className="sub-heading-text">{subtitle}</div>}
               {paragraphs?.length > 0 &&
                 paragraphs.map((para, i) => (
                   <p key={`para-${i}`}>

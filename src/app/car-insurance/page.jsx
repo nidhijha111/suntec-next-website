@@ -6,7 +6,16 @@ import WhybuypassengerCarrying from "../components/commonProductCompoennts/whybu
 import FeatureTermInsurance from "../components/termInsuranceComponents/FeatureTermInsurance";
 import ComparisonInsurenceTable from "../components/commonProductCompoennts/comparisonInsurenceTable";
 import WhenShouldBuyInsurence from "../components/termInsuranceComponents/whenShouldBuyInsurence";
-import { comparisonData, DocumentsData, factorsaffectingInsuranceData, featureAndBenifitData, howToChooseRightInsuranceData, stepsData, typesofCardInsurencePlicyData, whyCarInsurencePolityData } from "./car-insurance-data";
+import {
+  comparisonData,
+  DocumentsData,
+  factorsaffectingInsuranceData,
+  featureAndBenifitData,
+  howToChooseRightInsuranceData,
+  stepsData,
+  typesofCardInsurencePlicyData,
+  whyCarInsurencePolityData,
+} from "./car-insurance-data";
 
 export default function page() {
   return (
@@ -92,7 +101,6 @@ export default function page() {
           {" "}
           What is electric car Insurance?{" "}
         </div>
-        {/* <div className="main_heading_text yellow">policy in India?</div> */}
         <div className="heading_underline_border"></div>
         <div className="heading_para">
           Electric car Insurance is a type of Insurance policy that protects

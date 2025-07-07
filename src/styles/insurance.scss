@@ -209,12 +209,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: $color-pure-white;
-    
 
     .info-text {
       width: 100%;
       padding: 60px;
       background: $color-brand-blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
 
       .sub-heading-text {
         font-size: 25px;
@@ -248,7 +251,6 @@
     }
   }
 
-
   .disclaimer-note {
     text-align: center;
     margin-top: 20px;
@@ -270,7 +272,7 @@
       margin-bottom: 40px;
     }
   }
-    .remove-margin {
+  .remove-margin {
     margin-bottom: -60px;
     @media (max-width: 962px) {
       margin-bottom: -40px;
