@@ -23,53 +23,86 @@ export default function Footer() {
         <div className="footer_link_wrapper">
           <div className="footer_head_link">Motor Insurance</div>
 
-          <div className="footer_link" onClick={() => router.push("/goods-carrying-vehicle-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/goods-carrying-vehicle-insurance")}
+          >
             Goods Carrying Vehicle Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/passenger-carrying-vehicle-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/passenger-carrying-vehicle-insurance")}
+          >
             Passenger Carrying Vehicle Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/car-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/car-insurance")}
+          >
             Car Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/bike-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/bike-insurance")}
+          >
             Bike Insurance
           </div>
           <div
-            className="footer_head_link footer_link"
+            className="footer_head_link"
             onClick={() => router.push("/marine-insurance")}
           >
-            Marine & Aviation Insurance
+            <span className="footer_link">Marine & Aviation Insurance</span>
           </div>
           <div
             className="footer_head_link footer_link"
             onClick={() => router.push("/term-insurance")}
           >
-            Term Insurance
+            <span className="footer_link"> Term Insurance</span>
           </div>
         </div>
         <div className="footer_link_wrapper">
           <div className="footer_head_link"> Other Categories</div>
 
-          <div className="footer_link" onClick={() => router.push("/home-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/home-insurance")}
+          >
             Home Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/bussiness-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/bussiness-insurance")}
+          >
             Business Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/health-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/health-insurance")}
+          >
             Health & Group Medical Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/personal-accident-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/personal-accident-insurance")}
+          >
             Personal Accident Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/public-liability-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/public-liability-insurance")}
+          >
             Public Liability Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/fidelity-guarantee-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/fidelity-guarantee-insurance")}
+          >
             Fidelity Guarantee Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/cyber-insurance")}>
+          <div
+            className="footer_link"
+            onClick={() => router.push("/cyber-insurance")}
+          >
             Cyber Insurance
           </div>
         </div>
@@ -130,35 +163,37 @@ export default function Footer() {
         <div className="spacing-top"></div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot">&bull;</span> Suntec Insurance is registered
-            as a Direct Insurance Broker (Life and General) I Registration
-            No.1044, Valid till 03/03/2028, Registration Code IRDAI/DB1159/2024,
-            License category : Direct Insurance Broker (Life and General)
+            <span className="small-dot">&bull;</span> Suntec Insurance is
+            registered as a Direct Insurance Broker (Life and General) I
+            Registration No.1044, Valid till 03/03/2028, Registration Code
+            IRDAI/DB1159/2024, License category : Direct Insurance Broker (Life
+            and General)
           </div>
         </div>
         <div className="spacing-top"></div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot">&bull;</span> Disclaimer : Suntec Insurance
-            Broking Private Limited acts solely as a facilitator. The final
-            decision on claim settlement rests entirely with the respective
-            insurer. For complete details on risk factors, terms and conditions,
-            please refer to the insurer’s sales brochure before making a
-            purchase. Standard terms and conditions apply.
+            <span className="small-dot">&bull;</span> Disclaimer : Suntec
+            Insurance Broking Private Limited acts solely as a facilitator. The
+            final decision on claim settlement rests entirely with the
+            respective insurer. For complete details on risk factors, terms and
+            conditions, please refer to the insurer’s sales brochure before
+            making a purchase. Standard terms and conditions apply.
           </div>
         </div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot">&bull;</span> Disclaimer : Suntec Insurance
-            Broking Private Limited does not endorse, rate or recommend any
-            particular insurer or any Insurance product offered by any insurer.
+            <span className="small-dot">&bull;</span> Disclaimer : Suntec
+            Insurance Broking Private Limited does not endorse, rate or
+            recommend any particular insurer or any Insurance product offered by
+            any insurer.
           </div>
         </div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot">&bull;</span> Disclaimer : The information
-            provided on our website is intended to offer an overview of
-            Insurance products and services. For complete and detailed
+            <span className="small-dot">&bull;</span> Disclaimer : The
+            information provided on our website is intended to offer an overview
+            of Insurance products and services. For complete and detailed
             information, please refer to the respective insurer’s official
             website and product documents.
           </div>
@@ -166,9 +201,9 @@ export default function Footer() {
         <div className="spacing-top"></div>
         <div className="footer_info_text_wrapper">
           <div>
-            <span className="small-dot">&bull;</span> Visitors are hereby informed
-            that their information submitted on the website may be shared with
-            insurers.
+            <span className="small-dot">&bull;</span> Visitors are hereby
+            informed that their information submitted on the website may be
+            shared with insurers.
           </div>
         </div>
         <div className="footer_info_text_wrapper">
@@ -177,7 +212,10 @@ export default function Footer() {
       </div>
       <p className="copyright footer_info_text_wrapper">
         © Copyright 2025 - 2026 suntecinsurance.com. All Rights Reserved I
-        Sitemap I <a href="/faq" className="footer-link footer-bottom-link">FAQ’S</a>
+        Sitemap I{" "}
+        <a href="/faq" className="footer-link footer-bottom-link">
+          FAQ’S
+        </a>
       </p>
     </footer>
   );
