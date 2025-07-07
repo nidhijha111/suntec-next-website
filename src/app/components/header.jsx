@@ -33,12 +33,12 @@ const productsMenuData = [
       {
         id: "electric-car-insurance",
         label: "Electric Car Insurance",
-        link: "/product",
+        link: "/car-insurance",
       },
       {
         id: "electric-bike-insurance",
         label: "Electric Bike Insurance",
-        link: "/product",
+        link: "/bike-insurance",
       },
       {
         id: "marine-insurance",
