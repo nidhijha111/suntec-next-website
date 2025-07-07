@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+.comparison-table-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .line {
+    width: 84px;
+    height: 3px;
+    background-color: $color-brand-blue;
+    margin: 30px auto 23px auto;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    .comprasion-table {
+      border-collapse: collapse;
+      min-width: 500px;
+      width: 100%;
+      font-size: 15px;
+      th {
+        background-color: $color-greyish;
+        padding: 20px 10px;
+      }
+      td {
+        padding: 10px;
+        img {
+          width: 40px;
+          object-fit: contain;
+        }
+      }
+      th,
+      td {
+        border: 1px solid $light-border-color;
+        text-align: left;
+      }
+    }
+    @media (max-width: 767px) {
+      overflow-x: scroll;
+      scrollbar-width: thin;
+    }
+  }
+}

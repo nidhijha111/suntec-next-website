@@ -1,13 +1,20 @@
 import React from "react";
 
-
-export default function DocumentInfoSection({documentsData,headingTextFirst,headingTextSecond,disclaimerText}) {
+export default function DocumentInfoSection({
+  documentsData,
+  headingTextFirst,
+  headingTextSecond,
+  disclaimerText,
+  noteText,
+}) {
   return (
     <section className="documents-needed-section">
       <div className="container">
         <div className="section-title main_heading_text">
           {headingTextFirst && <div className="blue">{headingTextFirst} </div>}
-          {headingTextSecond && <div className="yellow"> {headingTextSecond}</div>}
+          {headingTextSecond && (
+            <div className="yellow"> {headingTextSecond}</div>
+          )}
         </div>
         <div className="documents-content-wrapper">
           <div className="documents-header">
@@ -15,6 +22,11 @@ export default function DocumentInfoSection({documentsData,headingTextFirst,head
           </div>
           <div className="documents-columns-container">
             <div className="documents-column">
+              {documentsData?.columnfirstTitle && (
+                <div className="document-column-header-text">
+                  {documentsData?.columnfirstTitle}
+                </div>
+              )}
               <ul>
                 {documentsData.column1Items.map((item, index) => (
                   <li
@@ -35,6 +47,11 @@ export default function DocumentInfoSection({documentsData,headingTextFirst,head
               </ul>
             </div>
             <div className="documents-column">
+              {documentsData?.columnsecondTitle && (
+                <div className="document-column-header-text">
+                  {documentsData?.columnsecondTitle}
+                </div>
+              )}
               <ul>
                 {documentsData.column2Items.map((item, index) => (
                   <li key={`col2-${index}`}>
@@ -53,9 +70,10 @@ export default function DocumentInfoSection({documentsData,headingTextFirst,head
             </div>
           </div>
         </div>
-        {disclaimerText && <p className="disclaimer-note">
-          Disclaimer : {disclaimerText}
-        </p>}
+        {disclaimerText && (
+          <p className="disclaimer-note">Disclaimer : {disclaimerText}</p>
+        )}
+        {noteText && <p className="disclaimer-note">{noteText}</p>}
       </div>
     </section>
   );

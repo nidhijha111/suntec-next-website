@@ -81,7 +81,6 @@
           height: 20px;
           border-radius: 0px !important;
           margin-left: 0px !important;
-
         }
 
         a {
@@ -291,7 +290,7 @@
 
   .section-title {
     text-align: center;
-    
+
     &::after {
       content: "";
       display: block;
@@ -773,7 +772,12 @@
 
   .documents-column {
     flex: 1;
-
+    .document-column-header-text {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      margin-top: 10px;
+    }
     &:first-child {
       @media (min-width: 768px) {
         padding-right: 20px;
@@ -863,11 +867,10 @@
   }
 }
 
-
-.documnet-first-item{
+.documnet-first-item {
   margin-right: 70px;
- 
-  @media(max-width:900px){
-     margin-right: 0px;
+
+  @media (max-width: 900px) {
+    margin-right: 0px;
   }
 }

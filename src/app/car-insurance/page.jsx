@@ -1,66 +1,13 @@
-import React from "react";
 import CommonheroSection from "../components/commonProductCompoennts/commonheroSection";
 import InsuranceInfoSection from "../components/otherInsurance/InsuranceInfoSection";
 import DocumentInfoSection from "../components/otherInsurance/documentInfoSection";
 import HowtoBuyTermPolicy from "../components/termInsuranceComponents/howtoBuyTermPolicy";
-const DocumentsData = {
-  column1Title:
-    "The following documents will be required to file a claim for car Insurance.",
-  column1Items: [
-    {
-      text: "Registration Certificate (RC) with fitness certificate of the car",
-      iconColor: "blue",
-    },
-    { text: "Driving license of driver", iconColor: "yellow" },
-    { text: "Aadhaar card", iconColor: "blue" },
-    { text: "Copy of FIR", iconColor: "yellow" },
-  ],
-  column2Title: "",
-  column2Items: [
-    { text: "Duly filled claim form ", iconColor: "blue" },
-    { text: "Car Insurance policy ", iconColor: "yellow" },
-    {
-      text: "Customer's bank details with a cancelled cheque",
-      iconColor: "blue",
-    },
-  ],
-};
+import WhybuypassengerCarrying from "../components/commonProductCompoennts/whybuypassengerCarrying";
+import FeatureTermInsurance from "../components/termInsuranceComponents/FeatureTermInsurance";
+import ComparisonInsurenceTable from "../components/commonProductCompoennts/comparisonInsurenceTable";
+import WhenShouldBuyInsurence from "../components/termInsuranceComponents/whenShouldBuyInsurence";
+import { comparisonData, DocumentsData, factorsaffectingInsuranceData, featureAndBenifitData, howToChooseRightInsuranceData, stepsData, typesofCardInsurencePlicyData, whyCarInsurencePolityData } from "./car-insurance-data";
 
-const stepsData = [
-  {
-    id: "step1",
-    stepNumber: "Step 1",
-    variant: "blue",
-    description:
-      "Visit suntec’s website www.suntecinsurance.com. Click on the ‘Car Insurance’ icon on the ‘Home Page’ or from the ‘Products tab’ click on Car  Insurance or Electric Bike Insurance",
-  },
-  {
-    id: "step2",
-    stepNumber: "Step 2",
-    variant: "yellow",
-    description: "Enter your registration number, mobile number and email.",
-  },
-  {
-    id: "step3",
-    stepNumber: "Step 3",
-    variant: "blue",
-    description:
-      "Our Insurance advisor will provide all the necessary information to help you choose the policy that best suits your needs.",
-  },
-  {
-    id: "step4",
-    stepNumber: "Step 4",
-    variant: "yellow",
-    description: "After choosing the policy, make the premium payment.",
-  },
-  {
-    id: "step5",
-    stepNumber: "Step 5",
-    variant: "blue",
-    description:
-      "Your Car Insurance policy will be mailed to you after paying the premium.",
-  },
-];
 export default function page() {
   return (
     <div className="container other-insurence-section">
@@ -91,6 +38,96 @@ export default function page() {
           in public spaces must be covered by motor insurance. At a minimum,
           policyholders are required to have third-party liability insurance,
           even under basic insurance plans.
+        </div>
+      </section>
+      <div className="large-margin"></div>
+      <DocumentInfoSection
+        documentsData={featureAndBenifitData}
+        headingTextFirst={"Features and benefits"}
+        headingTextSecond={"of car Insurance"}
+        noteText={
+          "*TP insurance price for less than 1000cc engines. ** All savings are provided by the insurer-as per the IRDAI insurance plan. Standard terms and conditions apply.s"
+        }
+      />
+      <div className="large-margin"></div>
+      <FeatureTermInsurance
+        carddata={whyCarInsurencePolityData}
+        headingLineOne={"Why do you need to buy"}
+        headingLineTwo={"  car Insurance?"}
+        headingParaText="A dependable car insurance policy shields you from monetary losses caused by accidents, theft, or liabilities to third parties, providing you with comfort on each journey. Here are some compelling reasons to buy car insurance in India:"
+      />
+
+      <WhybuypassengerCarrying
+        datalist={typesofCardInsurencePlicyData}
+        headerTextFirst="Types of car Insurance "
+        headerTextSecond="policies in India?"
+        paraheadText="Please note"
+        paratext="For the detailed information on the coverages, please read the policy document available on the respective insurers website."
+      />
+      <div className="large-margin"></div>
+      <ComparisonInsurenceTable
+        headingTextFirst={"Third-party Car Insurance vs"}
+        headingTextSecond={"Comprehensive Car Insurance"}
+        comparisonData={comparisonData}
+        paraheadText="Please note"
+        paratext="For the detailed information on these three types of coverages, please read the policy document available on the respective insurers website."
+      />
+      <div className="large-margin"></div>
+      <WhybuypassengerCarrying
+        datalist={howToChooseRightInsuranceData}
+        headerTextFirst="How to choose the right"
+        headerTextSecond="car Insurance policy?"
+      />
+      <div className="large-margin"></div>
+      <WhenShouldBuyInsurence
+        benefitsData={factorsaffectingInsuranceData}
+        headingLineOne={"Factors affecting"}
+        headingTextSecond={"car Insurance premium"}
+        headingParaText="The following are the factors that influence car Insurance premium calculation:"
+      />
+
+      <div className="large-margin"></div>
+      <section className="how_we_work_section">
+        <div className="main_heading_text blue">
+          {" "}
+          What is electric car Insurance?{" "}
+        </div>
+        {/* <div className="main_heading_text yellow">policy in India?</div> */}
+        <div className="heading_underline_border"></div>
+        <div className="heading_para">
+          Electric car Insurance is a type of Insurance policy that protects
+          electric cars. It provides monetary security in the event of
+          accidental damage, burglary, or damage to the covered electric vehicle
+          due to natural or man-made calamities.
+        </div>
+        <div className="heading_para">
+          The Insurance policy considers the unique characteristics of EVs, such
+          as their design, battery packs, and charging framework. Due to the
+          higher initial expenses incurred while buying electric vehicles,
+          costly battery technology, and electric car insurance, EV insurance is
+          critical for EV owners. In the case of accidental damage to your car,
+          EV Insurance ensures that the expense of repairing or replacing it is
+          covered under the Insurance coverage.
+        </div>
+      </section>
+      <div className="large-margin"></div>
+      <section className="how_we_work_section">
+        <div className="main_heading_text blue">
+          Why do electric cars require
+        </div>
+        <div className="main_heading_text yellow">specialised Insurance?</div>
+        <div className="heading_underline_border"></div>
+        <div className="heading_para">
+          Electric vehicles (EVs) have distinct features that set them apart
+          from conventional vehicles. In contrast to traditional vehicles,
+          electric cars utilise cutting-edge battery technology, which can be
+          costly to fix or replace if damaged. Standard Insurance policies may
+          not fully cover the significant expenses associated with the
+          components of electric vehicles. For this reason, electric cars need
+          specialised Insurance plans that offer coverage tailored to their
+          specific design and technical requirements. Owners can secure
+          sufficient financial protection by purchasing Insurance tailored
+          explicitly for electric cars.
         </div>
       </section>
       <HowtoBuyTermPolicy

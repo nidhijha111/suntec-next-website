@@ -7,7 +7,8 @@ const FeatureTermInsurance = ({
   paratext,
   paraheadingText,
   descsecondPara,
-  descmainText
+  descmainText,
+  headingParaText
 }) => {
   return (
     <section className="coverage-types-section">
@@ -17,6 +18,7 @@ const FeatureTermInsurance = ({
           <div className="yellow">{headingLineTwo}</div>
         </div>
       </div>
+      {headingParaText && <p className="text-center" style={{marginBottom:"40px"}}>{headingParaText}</p>}
       <div className="coverage-cards-container">
         {carddata?.map((coverage) => (
           <div

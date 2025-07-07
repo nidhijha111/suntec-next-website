@@ -5,6 +5,7 @@ export default function WhybuypassengerCarrying({
   headerTextFirst,
   headerTextSecond,
   paratext,
+  paraheadText
 }) {
   return (
     <section className="term-insurance-plan-section">
@@ -25,7 +26,11 @@ export default function WhybuypassengerCarrying({
           </div>
         ))}
       </div>
-      {paratext && <p className="disclaimer-note">Disclaimer : {paratext}</p>}
+      {paratext && (
+        <p className="disclaimer-note">
+          {paraheadText ?? "Disclaimer"} : {paratext}
+        </p>
+      )}
     </section>
   );
 }

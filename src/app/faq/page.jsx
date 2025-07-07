@@ -29,7 +29,8 @@ const faqData = [
   {
     id: 5,
     question: "5. Can I buy multiple Insurance policies through your platform?",
-    answer: "Yes, you can connect with our team and buy multiple policies through us.",
+    answer:
+      "Yes, you can connect with our team and buy multiple policies through us.",
   },
   {
     id: 6,
@@ -141,11 +142,20 @@ const BookerServiceFaq = [
 export default function page() {
   return (
     <div className="container">
-      <div className="faq-page-container">
-        <div className="main_heading_text text-center">
-          <div className="blue">FAQs</div>
-          <div className="line-wrapper"></div>
+      <section className="faq-header-story-section">
+        <div className="image-container">
+          <img
+            src="./assets/images/faqs.jpg"
+            alt="Logistics and insurance concept with model vehicles and laptop"
+          />
         </div>
+        <div className="text-container">
+          <div className="main_heading_text blue">FAQs</div>
+          <div className="divider"></div>
+        </div>
+      </section>
+
+      <div className="faq-page-container">
         {faqData.map((item, index) => (
           <div className="question-wrapper" key={item.id}>
             <div className="question-heading-text">{item.question}</div>

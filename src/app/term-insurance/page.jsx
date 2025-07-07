@@ -158,6 +158,56 @@ const stepsData = [
       "Your Insurance policy will be mailed to you after paying the premium.",
   },
 ];
+
+const benefitsData = [
+  {
+    number: "1",
+    title: (
+      <>
+        In your 20s <br /> (Age 20–29)
+      </>
+    ),
+    description:
+      "Starting early means locking in low premiums and long-term coverage while you're young and healthy. It’s a smart way to protect against debts and future financial risks.",
+    variant: "yellow",
+  },
+  {
+    number: "2",
+    title: (
+      <>
+        In your 30s <br />
+        (Age 30–39)
+      </>
+    ),
+    description:
+      "With growing responsibilities like family and home loans, term Insurance ensures financial security for your loved ones - at still affordable premiums.",
+    variant: "blue",
+  },
+  {
+    number: "3",
+    title: (
+      <>
+        In your 40s <br />
+        (Age 40–49)
+      </>
+    ),
+    description:
+      "With major expenses like education, healthcare, and loans, term Insurance ensures your family stays protected—even if premiums are higher.",
+    variant: "yellow",
+  },
+  {
+    number: "4",
+    title: (
+      <>
+        In your 50s <br />
+        (Age 50–59)
+      </>
+    ),
+    description:
+      "With limited options and higher premiums, it’s wise to opt for short-term or whole life plans that align with your goals—especially while you're still in good health.",
+    variant: "blue",
+  },
+];
 export default function page() {
   return (
     <div className="container">
@@ -165,7 +215,7 @@ export default function page() {
         <TermInsuranceHero />
         <div className="large-margin"></div>
         <InsuranceInfoSection
-          imageSrc="./assets/images/product_hero_image.png"
+          imageSrc="./assets/images/term-insurance-second.jpg"
           alt={"Term Insurance"}
           title={"Term Insurance"}
           subtitle={"What is term Insurance?"}
@@ -187,7 +237,15 @@ export default function page() {
           headingLineOne={"Who should buy a "}
           headingLineTwo={"term Insurance policy?"}
         />
-        <WhenShouldBuyInsurence />
+        <WhenShouldBuyInsurence
+          benefitsData={benefitsData}
+          headingLineOne={"When should I buy a"}
+          headingTextSecond={"term plan?"}
+          headingParaText="Buying a term Insurance policy is an important financial choice, and the
+        timing significantly affects both the premium amount and the coverage
+        advantages. Here's a quick look at the ideal age to buy a term plan and
+        how premiums typically change with different life stages:"
+        />
         <HowtoBuyTermPolicy
           stepsData={stepsData}
           headingTextFirst="How to buy "
