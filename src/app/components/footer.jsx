@@ -48,16 +48,16 @@ export default function Footer() {
             Bike Insurance
           </div>
           <div
-            className="footer_head_link"
+            className="footer_head_link cursur-pointer"
             onClick={() => router.push("/marine-insurance")}
           >
-            <span className="footer_link">Marine & Aviation Insurance</span>
+            Marine & Aviation Insurance
           </div>
           <div
-            className="footer_head_link footer_link"
+            className="footer_head_link cursur-pointer"
             onClick={() => router.push("/term-insurance")}
           >
-            <span className="footer_link"> Term Insurance</span>
+             Term Insurance
           </div>
         </div>
         <div className="footer_link_wrapper">
