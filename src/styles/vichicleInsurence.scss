@@ -14,13 +14,15 @@
 
   .table-wrapper {
     width: 100%;
+    box-shadow: $box-shadow;
     .comprasion-table {
       border-collapse: collapse;
       min-width: 500px;
       width: 100%;
       font-size: 15px;
       th {
-        background-color: $color-greyish;
+        background-color: $color-brand-blue;
+        color: $color-pure-white;
         padding: 20px 10px;
       }
       td {
@@ -32,7 +34,7 @@
       }
       th,
       td {
-        border: 1px solid $light-border-color;
+        
         text-align: left;
       }
     }

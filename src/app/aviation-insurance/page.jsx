@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import MarineAviationSection from "../components/marineAviationSection/marineAviationSection";
 
 export default function page() {
-  return (
-    <div className='container'>page</div>
-  )
+  return <MarineAviationSection type={"Aviation Insurance"} />;
 }

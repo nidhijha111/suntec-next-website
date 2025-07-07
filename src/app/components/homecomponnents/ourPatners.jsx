@@ -10,50 +10,42 @@ export default function OurPatners() {
       </div>
       <div className="our_patners_info_conatiner">
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/icici-lombard-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/iffco-tokio-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/national-insurance-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/sbi-insurence-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/royal-sundarram-insurance-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/tata-alig-unsurance-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/the-india-accurance-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/united-india-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/zurich-kotak-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/hdfc-ergo-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/bajaj-ins-logo.jpg" alt="insurance icon" />
         </div>
         <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
+          <img src="./assets/images/bajaj-allianz-logo.jpg" alt="insurance icon" />
         </div>
-        <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
-        </div>
-        <div>
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
-        </div>
-        <div className="center-last">
-          <img src="./assets/images/lic_brand_logo.svg" alt="insurance icon" />
-        </div>
+       
       </div>
     </section>
   );

@@ -5,6 +5,7 @@ export default function WhenShouldBuyInsurence({
   headingLineOne,
   headingTextSecond,
   headingParaText,
+  description
 }) {
   return (
     <section className="major-benefits-section">
@@ -32,6 +33,7 @@ export default function WhenShouldBuyInsurence({
           </div>
         ))}
       </div>
+      {description && <p className="disclaimer-note">{description}</p>}
     </section>
   );
 }

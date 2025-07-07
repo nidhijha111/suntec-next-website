@@ -13,7 +13,7 @@ export default function PublicfidelityCyberForm({ type }) {
           Public Liability <br /> Insurance
         </>
       ),
-      icon: "/assets/images/home_insurance_icon.svg",
+      icon: "/assets/images/public-insurance-image.png",
     },
     {
       id: "Fidelity Guarantee Insurance",
@@ -22,7 +22,7 @@ export default function PublicfidelityCyberForm({ type }) {
           Fidelity Guarantee <br /> Insurance
         </>
       ),
-      icon: "/assets/images/bussiness_insurense_icon.svg",
+      icon: "/assets/images/Fidelity-Guarantee-image.png",
     },
     {
       id: "Cyber Insurance",
