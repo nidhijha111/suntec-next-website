@@ -29,21 +29,21 @@ export default function Footer() {
           <div className="footer_link" onClick={() => router.push("/passenger-carrying-vehicle-insurance")}>
             Passenger Carrying Vehicle Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/car-insurance")}>
             Car Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/bike-insurance")}>
             Bike Insurance
           </div>
           <div
             className="footer_head_link"
-            onClick={() => router.push("/product")}
+            onClick={() => router.push("/marine-insurance")}
           >
             Marine & Aviation Insurance
           </div>
           <div
             className="footer_head_link"
-            onClick={() => router.push("/product")}
+            onClick={() => router.push("/term-insurance")}
           >
             Term Insurance
           </div>
@@ -51,25 +51,25 @@ export default function Footer() {
         <div className="footer_link_wrapper">
           <div className="footer_head_link"> Other Categories</div>
 
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/home-insurance")}>
             Home Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/bussiness-insurance")}>
             Business Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/health-insurance")}>
             Health & Group Medical Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/personal-accident-insurance")}>
             Personal Accident Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/public-liability-insurance")}>
             Public Liability Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/fidelity-guarantee-insurance")}>
             Fidelity Guarantee Insurance
           </div>
-          <div className="footer_link" onClick={() => router.push("/product")}>
+          <div className="footer_link" onClick={() => router.push("/cyber-insurance")}>
             Cyber Insurance
           </div>
         </div>

@@ -18,7 +18,7 @@ const productsMenuData = [
       {
         id: "passenger-carrying",
         label: "Passenger-carrying vehicle Insurance",
-        link: "/passenger-carrying-vehicle-insurances",
+        link: "/passenger-carrying-vehicle-insurance",
       },
       {
         id: "car-insurance",
