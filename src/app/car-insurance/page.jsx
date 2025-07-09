@@ -143,6 +143,7 @@ export default function page() {
         headingTextFirst="How to buy a car Insurance policy?"
         stepimagesrc={"./assets/images/car-insurance-step-image.svg"}
       />
+      
       <DocumentInfoSection
         documentsData={DocumentsData}
         headingTextFirst={"Documents needed to file a "}

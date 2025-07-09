@@ -21,7 +21,6 @@ const DocumentsData = {
   ],
 };
 
-
 const stepsData = [
   {
     id: "step1",
@@ -100,7 +99,7 @@ export default function HealthPersonalInsurenceSection({ type }) {
         </p>
         <div className="large-margin"></div>
         <InsuranceInfoSection
-        reverse={true}
+          reverse={true}
           imageSrc="./assets/images/Personal-Accident-Insurance.jpg"
           alt={"Personal Accident Insurance image"}
           title={"Personal Accident Insurance"}
@@ -116,8 +115,11 @@ export default function HealthPersonalInsurenceSection({ type }) {
           stepsData={stepsData}
           headingTextFirst="How to buy health or"
           headingTextSecond="personal accident Insurance?"
-          stepimagesrc={"./assets/images/personal-accident-health-step-image.svg"}
+          stepimagesrc={
+            "./assets/images/personal-accident-health-step-image.svg"
+          }
         />
+        <div className="remove-margin"></div>
       </div>
     </div>
   );

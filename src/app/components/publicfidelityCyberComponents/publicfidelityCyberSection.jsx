@@ -89,6 +89,7 @@ export default function PublicfidelityCyberSection({ type }) {
         headingTextSecond="guarantee/cyber Insurance?"
         stepimagesrc={"./assets/images/liability-fidelity-step-image.svg"}
       />
+         <div className="remove-margin"></div>
       {/* <div className="large-margin"></div> */}
     </div>
   );

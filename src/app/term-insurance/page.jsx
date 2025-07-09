@@ -252,6 +252,7 @@ export default function page() {
           headingTextSecond="term Insurance?"
           stepimagesrc={"./assets/images/term-step-image.svg"}
         />
+           <div className="remove-margin"></div>
       </div>
     </div>
   );

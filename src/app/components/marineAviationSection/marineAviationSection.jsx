@@ -217,10 +217,10 @@ const stepsData = [
       "Your Insurance policy will be mailed to you after paying the premium.",
   },
 ];
-export default function MarineAviationSection({type}) {
+export default function MarineAviationSection({ type }) {
   return (
     <div className="container other-insurence-section two-type-categories">
-      <MarrineAvienceForm  type={type}/>
+      <MarrineAvienceForm type={type} />
       <div className="large-margin"></div>
       <InsuranceInfoSection
         imageSrc="./assets/images/Marine-Insurance-image.jpg"
@@ -273,6 +273,7 @@ export default function MarineAviationSection({type}) {
           "./assets/images/how-to-buy-marine-insurence-step-image.svg"
         }
       />
+      <div className="remove-margin"></div>
     </div>
   );
 }

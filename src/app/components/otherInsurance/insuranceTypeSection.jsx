@@ -230,6 +230,7 @@ export default function InsuranceTypeSection({ type }) {
         headingTextSecond=" or travel Insurance?"
         stepimagesrc={"./assets/images/home-bussiness-travel-step.svg"}
       />
+         <div className="remove-margin"></div>
     </div>
   );
 }
