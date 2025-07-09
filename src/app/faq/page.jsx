@@ -145,7 +145,7 @@ export default function page() {
       <section className="faq-header-story-section">
         <div className="image-container">
           <img
-            src="./assets/images/faqs.jpg"
+            src="./assets/images/faqs.png"
             alt="Logistics and insurance concept with model vehicles and laptop"
           />
         </div>

@@ -248,7 +248,7 @@ export default function page() {
         />
         <HowtoBuyTermPolicy
           stepsData={stepsData}
-          headingTextFirst="How to buy "
+          headingTextFirst="How to buy"
           headingTextSecond="term Insurance?"
           stepimagesrc={"./assets/images/term-step-image.svg"}
         />

@@ -85,7 +85,7 @@ export default function TermInsuranceHero() {
       <div className="top-section">
         <div className="left-image">
           <img
-            src="/assets/images/life-insurance-concept-with-stethoscope.jpg"
+            src="/assets/images/life-insurance-concept-with-stethoscope.png"
             alt="Blue Truck"
             className="responsive-img"
           />
